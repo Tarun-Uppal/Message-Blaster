@@ -165,7 +165,7 @@ def open_whatsapp():
     """
     global wait, browser
     chrome_options = Options()
-    chrome_options.add_argument('--user-data-dir=./User_Data')
+    chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
     browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
     wait = WebDriverWait(browser, 60)
     browser.maximize_window()
@@ -175,14 +175,42 @@ def whatsapp_login():
     logs into whatsapp
     """
     global wait, browser
+    
     chrome_options = Options()
-    folder_to_delete = os.path.dirname(__file__)
-    folder_to_delete1 = folder_to_delete.split("\\")
-    folder_to_delete_length = len(folder_to_delete1)
-    folder_to_delete.replace(folder_to_delete, folder_to_delete1[folder_to_delete_length-1])
-    print(folder_to_delete)
-    chrome_options.add_argument('--user-data-dir=./User_Data')
+    chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
     browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
     wait = WebDriverWait(browser, 60)
     browser.get(Link)
     browser.maximize_window()
+    while True:
+        try:
+            stuff = browser.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[2]/span')
+            browser.quit()
+            break
+        except exceptions.NoSuchElementException as e:
+            time.sleep(1)
+            
+def whatsapp_reset():
+    chrome_options = Options()
+    chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
+    browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
+    wait = WebDriverWait(browser, 60)
+    browser.get(Link)
+    browser.maximize_window()
+    while True:
+        try:
+            options = browser.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[3]')
+            options.click()
+            break
+        except exceptions.NoSuchElementException as e:
+            time.sleep(1)
+        
+    while True:
+        try:
+            options = browser.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[3]/span/div/ul/li[7]')
+            options.click()
+            break
+        except exceptions.NoSuchElementException as e:
+            time.sleep(1)
+            
+    browser.quit()
