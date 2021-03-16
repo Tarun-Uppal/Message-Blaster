@@ -166,13 +166,9 @@ def open_whatsapp():
     global wait, browser
     chrome_options = Options()
     chrome_options.add_argument('--user-data-dir=./User_Data')
-    # if headless == 'True':
-    #     chrome_options.add_argument('--headless')
     browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
     wait = WebDriverWait(browser, 60)
-    # browser.get(Link)
-    # browser.maximize_window()
-    # print("QR scanned")
+    browser.maximize_window()
     
 def whatsapp_login():
     """
