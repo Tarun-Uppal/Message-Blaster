@@ -34,6 +34,7 @@ def sender(numbers, contacts, attachment_path, message1):
     """
     sends the contacts the message
     """
+    message1 = message1.replace('(new_line)', '\n')
     # the number of numbers to send the message to
     numbers_size = len(numbers)
     # login into whtsapp
@@ -66,11 +67,14 @@ def sender(numbers, contacts, attachment_path, message1):
                 input_box = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
                 # goes through all the letters in the message
                 for ch in message:
+                    # if the char is a new line then adds a new line
                     if ch == "\n":
                         ActionChains(browser).key_down(Keys.SHIFT).key_down(Keys.ENTER).key_up(Keys.ENTER).key_up(
                             Keys.SHIFT).key_up(Keys.BACKSPACE).perform()
                     else:
+                        # otherwise it sends the letters to the the textbox
                         input_box.send_keys(ch)
+                # once the message is over it sends it
                 input_box.send_keys(Keys.ENTER)
                 print("Message sent successfully")
             except Exception as e:
