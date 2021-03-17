@@ -38,7 +38,7 @@ def sender(numbers, contacts, attachment_path, message1):
     # the number of numbers to send the message to
     numbers_size = len(numbers)
     # login into whtsapp
-    open_whatsapp()
+    # open_whatsapp()
     # sets the starting point
     i = 0   
     # makes a loop
@@ -50,6 +50,7 @@ def sender(numbers, contacts, attachment_path, message1):
             print(number)
         # otherwise
         else:
+            open_whatsapp()
             # generates the personalized message
             message = message1.replace('(name)', contacts[i])
             # generates the link
@@ -60,7 +61,7 @@ def sender(numbers, contacts, attachment_path, message1):
             # sends the attachment
             send_attachment(attachment_path)
             # waits for 1 second
-            time.sleep(1)
+            # time.sleep(1)
             # sends the message
             try:
                 # trys to fins the browser box message
@@ -82,13 +83,14 @@ def sender(numbers, contacts, attachment_path, message1):
                 return
             # waits for 1 second
             time.sleep(1)
+            # exits the browser
+            browser.quit()
+            
         # checks if the array is over
         if i == numbers_size - 1:
             break
         # increments
         i += 1
-    # exits the browser
-    browser.quit()
     
 def isValid(s):
     """
@@ -103,41 +105,7 @@ def isValid(s):
         return True
     else:
         return False
-    
-def send_message(target, message, browser):
-    """
-    sends the message to the target number
-    """
-    try:
-        x_arg = '//span[contains(@title,' + target + ')]'
-        ct = 0
-        while ct != 5:
-            try:
-                group_title = wait.until(EC.presence_of_element_located((By.XPATH, x_arg)))
-                group_title.click()
-                break
-            except Exception as e:
-                print("Retry Send Message Exception", e)
-                ct += 1
-        while True:
-            try:
-                input_box = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
-                break
-            except exceptions.NoSuchElementException as e:
-                time.sleep(1)
-        for ch in message:
-            if ch == "\n":
-                ActionChains(browser).key_down(Keys.SHIFT).key_down(Keys.ENTER).key_up(Keys.ENTER).key_up(
-                    Keys.SHIFT).key_up(Keys.BACKSPACE).perform()
-            else:
-                input_box.send_keys(ch)
-        input_box.send_keys(Keys.ENTER)
-        print("Message sent successfully")
-        time.sleep(1)
-    except exceptions.NoSuchElementException as e:
-        print("send message exception: ", e)
-        return
-    
+
 def send_attachment(file_path):
     global wait, browser, selenium, exceptions
     while True:
