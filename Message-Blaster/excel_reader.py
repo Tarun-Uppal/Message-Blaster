@@ -1,20 +1,22 @@
-# excel file reader
-import openpyxl
-# imports the path stuff
-from pathlib import Path
+import pandas as pd
+import os
 
 def read_file(contacts_path):
-    """
-    reads the excel file
-    """
-    xlsx_file = Path(contacts_path)
-    wb_obj = openpyxl.load_workbook(xlsx_file) 
-
-    sheet = wb_obj.active
-    entries_count = sheet.max_row
-    contacts = [entries_count]
-    numbers = [entries_count]
-    for i in range(entries_count):
-        contacts.append(sheet["A" + str(i+1)].value)
-        numbers.append(sheet["C" + str(i+1)].value)
+    data = pd.read_excel (contacts_path) 
+    df = pd.DataFrame(data, columns= ['Name', 'Number'])
+    entries_count = 0
+    while True:
+        try:
+            name = df.loc[entries_count].Name
+        except KeyError as e:
+            break
+        entries_count += 1
+        
+    contacts = [None] * entries_count
+    numbers = [None] * entries_count
+    for i in range(entries_count):   
+        contacts[i] = str(df.loc[i].Name)
+        numbers[i] = int(df.loc[i].Number)
+    
     return (contacts, numbers)
+

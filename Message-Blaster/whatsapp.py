@@ -153,9 +153,16 @@ def send_attachment(file_path):
             break
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
-    time.sleep(4)
+            
     action = ActionChains(browser) 
-    action.send_keys(Keys.ENTER).perform()
+    while True:
+        try:
+            image_box = browser.find_element_by_xpath(
+                '//*[@id="app"]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div')
+            image_box.click()
+            break
+        except exceptions.NoSuchElementException as e:
+            time.sleep(1)
     
     print("File sent")
     
