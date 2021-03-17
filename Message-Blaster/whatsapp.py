@@ -18,6 +18,8 @@ import os
 import re
 # imports time
 import time
+# imports selenium
+import selenium
 
 
 # chrome path driver
@@ -28,12 +30,10 @@ Link = "https://web.whatsapp.com/"
 browser = None
 
 # send messages and attachments
-def sender(numbers, contacts, attachment_path):
+def sender(numbers, contacts, attachment_path, message1):
     """
     sends the contacts the message
     """
-    # gets the required varibles from the file
-    global browser
     # the number of numbers to send the message to
     numbers_size = len(numbers)
     # login into whtsapp
@@ -46,13 +46,11 @@ def sender(numbers, contacts, attachment_path):
         number = numbers[i]
         # checks if the number is invaild
         if isValid(910000000000+number == False) or len(str(number)) != 10:
-            # print("Invalid Number")
             print(number)
         # otherwise
         else:
-            # print(contacts[i])
             # generates the personalized message
-            message = "Dear " + str(contacts[i]) + "\n\nOver 50+ international products on sale at reasonable prices, visit www.edutess.com/shop/ to buy now"
+            message = message1.replace('(name)', contacts[i])
             # generates the link
             link = "https://web.whatsapp.com/send?phone={}&text&source&data&app_absent".format(910000000000+number)
             # sends the generated link to the browser
@@ -64,7 +62,9 @@ def sender(numbers, contacts, attachment_path):
             time.sleep(1)
             # sends the message
             try:
+                # trys to fins the browser box message
                 input_box = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
+                # goes through all the letters in the message
                 for ch in message:
                     if ch == "\n":
                         ActionChains(browser).key_down(Keys.SHIFT).key_down(Keys.ENTER).key_up(Keys.ENTER).key_up(
@@ -78,7 +78,6 @@ def sender(numbers, contacts, attachment_path):
                 return
             # waits for 1 second
             time.sleep(1)
-        # print(number)
         # checks if the array is over
         if i == numbers_size - 1:
             break
@@ -93,7 +92,7 @@ def isValid(s):
     """
     # casts the number into a string
     s = str(s)
-    # atores the pattern
+    # stores the pattern
     Pattern = re.compile("(0/91)?[7-9][0-9]{9}")
     # validates the pattern and returns thue if it is valid otherwise false
     if (Pattern.match(s)) and len(s) == 12: 
@@ -105,7 +104,6 @@ def send_message(target, message, browser):
     """
     sends the message to the target number
     """
-    global exceptions
     try:
         x_arg = '//span[contains(@title,' + target + ')]'
         ct = 0
@@ -137,7 +135,7 @@ def send_message(target, message, browser):
         return
     
 def send_attachment(file_path):
-    global time, exceptions
+    global wait, browser, selenium, exceptions
     while True:
         try:
             attachment_box = browser.find_element_by_xpath('//div[@title = "Attach"]')
@@ -145,6 +143,8 @@ def send_attachment(file_path):
             break
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
+        except selenium.common.exceptions.UnexpectedAlertPresentException as e:
+            continue
     while True:
         try:
             image_box = browser.find_element_by_xpath(
@@ -198,6 +198,7 @@ def whatsapp_login():
             time.sleep(1)
             
 def whatsapp_reset():
+    global wait, browser
     chrome_options = Options()
     chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
     browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
