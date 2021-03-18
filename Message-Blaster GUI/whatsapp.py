@@ -30,7 +30,7 @@ Link = "https://web.whatsapp.com/"
 browser = None
 
 # send messages and attachments
-def sender(numbers, contacts, attachment_path, message1):
+def sender(numbers, contacts, attachment_path, message1, first_attachment):
     """
     sends the contacts the message
     """
@@ -57,30 +57,16 @@ def sender(numbers, contacts, attachment_path, message1):
             link = "https://web.whatsapp.com/send?phone={}&text&source&data&app_absent".format(910000000000+number)
             # sends the generated link to the browser
             browser.get(link)
-            # print("Sending message to", str(number))
-            # sends the attachment
-            send_attachment(attachment_path)
-            # waits for 1 second
-            # time.sleep(1)
-            # sends the message
-            try:
-                # trys to fins the browser box message
-                input_box = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
-                # goes through all the letters in the message
-                for ch in message:
-                    # if the char is a new line then adds a new line
-                    if ch == "\n":
-                        ActionChains(browser).key_down(Keys.SHIFT).key_down(Keys.ENTER).key_up(Keys.ENTER).key_up(
-                            Keys.SHIFT).key_up(Keys.BACKSPACE).perform()
-                    else:
-                        # otherwise it sends the letters to the the textbox
-                        input_box.send_keys(ch)
-                # once the message is over it sends it
-                input_box.send_keys(Keys.ENTER)
-                print("Message sent successfully")
-            except Exception as e:
-                print("Failed to send message exception: ", e)
-                return
+            if first_attachment == True:
+                # sends the attachment
+                send_attachment(attachment_path)
+                # sends the message
+                send_message(message)
+            else:
+                # sends the message
+                send_message(message)
+                # sends the attachment
+                send_attachment(attachment_path)
             # waits for 1 second
             time.sleep(1)
             # exits the browser
@@ -91,6 +77,29 @@ def sender(numbers, contacts, attachment_path, message1):
             break
         # increments
         i += 1
+        
+def send_message(message):
+    while True:
+        try:
+            # trys to find the browser box message
+            input_box = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
+            # goes through all the letters in the message
+            for ch in message:
+                # if the char is a new line then adds a new line
+                if ch == "\n":
+                    ActionChains(browser).key_down(Keys.SHIFT).key_down(Keys.ENTER).key_up(Keys.ENTER).key_up(Keys.SHIFT).key_up(Keys.BACKSPACE).perform()
+                else:
+                    # otherwise it sends the letters to the the textbox
+                    input_box.send_keys(ch)
+            break
+        except exceptions.NoSuchElementException as e:
+            time.sleep(1)
+        except Exception as e:
+            print("Failed to send message exception: ", e)
+            return
+    # once the message is over it sends it
+    input_box.send_keys(Keys.ENTER)
+    print("Message sent successfully")
     
 def isValid(s):
     """
@@ -135,6 +144,8 @@ def send_attachment(file_path):
             break
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
+        except selenium.common.exceptions.ElementNotInteractableException as e:
+            continue
     
     print("File sent")
     
