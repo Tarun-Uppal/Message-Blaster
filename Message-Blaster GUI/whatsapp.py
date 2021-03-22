@@ -135,18 +135,18 @@ def send_attachment(file_path):
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
             
-    action = ActionChains(browser) 
+    # action = ActionChains(browser) 
     while True:
         try:
             image_box = browser.find_element_by_xpath(
-                '//*[@id="app"]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div')
+                '//*[@id="app"]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div')
             image_box.click()
             break
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
         except selenium.common.exceptions.ElementNotInteractableException as e:
             continue
-    
+    time.sleep(1)
     print("File sent")
     
 def open_whatsapp():
