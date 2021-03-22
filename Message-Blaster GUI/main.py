@@ -9,8 +9,8 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QMessageBox, QFileDialog
-
-
+import whatsapp
+import excel_reader as excel
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -295,13 +295,13 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.login_button.setText(_translate("MainWindow", "log in to whatsapp"))
         self.login_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-3epfk\"><span style=\" text-decoration: underline; color:#0000ff;\">Whatsapp Login Instructions</span></a></p></body></html>"))
-        self.excel_button.setText(_translate("MainWindow", "excel file choser"))
+        self.excel_button.setText(_translate("MainWindow", "Excel File Choser"))
         self.excel_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-fco0p\"><span style=\" text-decoration: underline; color:#0000ff;\">Excel File Formatting Instructions</span></a></p></body></html>"))
         self.message_textbox.setPlaceholderText(_translate("MainWindow", "Please enter your message here"))
         self.message_submit_button.setText(_translate("MainWindow", "Submit Text"))
         self.message_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-8t5tp\"><span style=\" text-decoration: underline; color:#0000ff;\">Message Instructions and formatting</span></a></p></body></html>"))
         self.attachment_first_checkbox.setText(_translate("MainWindow", "Would you like the attachment to be sent first"))
-        self.attachment_button.setText(_translate("MainWindow", "please enter the attacment"))
+        self.attachment_button.setText(_translate("MainWindow", "Please Enter the Attacment"))
         self.attachment_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-6fk2k\"><span style=\" text-decoration: underline; color:#0000ff;\">Instructions before you add the attachment</span></a></p></body></html>"))
         self.sender_button.setText(_translate("MainWindow", "start sending messages"))
         self.sender_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-8bknl\"><span style=\" text-decoration: underline; color:#0000ff;\">Instructions before you start sending the messsages</span></a></p></body></html>"))
@@ -311,38 +311,36 @@ class Ui_MainWindow(object):
         self.login_button.clicked.connect(login_info)
         self.excel_button.clicked.connect(excel_button)
         self.message_submit_button.clicked.connect(message_submit)
-        # message_submit(self)
-        # self.attachment_first_checkbox.
         self.attachment_button.clicked.connect(attachment_button)
         self.sender_button.clicked.connect(sender_button)
-        # self.messages_sent_progress_bar.
 
 def login_info():
-    print("login_info")
+    # print("login_info")
+    whatsapp.whatsapp_login()
     
 def excel_button():
-    global contacts_path
+    global contacts_path, ui, _translate, contacts, numbers
     print("excel_button")
     while True:
         filename = QFileDialog.getOpenFileName()
         contacts_path = filename[0]
         filename = contacts_path.split('.')
         if filename[1] == 'xlsx' or filename[1] == 'xlsb':
+            ui.excel_button.setText(_translate("MainWindow", "Excel File Choser : Chosen"))
             break
 
 def attachment_first_checkbox():
     global attachment_first
     print("attachment_first_checkbox")
-    var = ui.attachment_first_checkbox.checkState()
-    print(var)
-    if var == 2:
+    if ui.attachment_first_checkbox.checkState() == 2:
         attachment_first = True
     else:
         attachment_first = False  
 
 def attachment_button():
-    global attachment_path
+    global attachment_path, ui, _translate
     print("attachment_button")
+    attachment_first_checkbox()
     while True:
         filename = QFileDialog.getOpenFileName()
         attachment_path = filename[0]
@@ -350,10 +348,14 @@ def attachment_button():
         extension = attachment_path.split('.')[1]
         valid_extensions = ['xlsb', 'xlsx', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'jpg', 'gif', 'png', 'mp4', 'avi']
         if extension.lower() in valid_extensions:
+            ui.attachment_button.setText(_translate("MainWindow", "Please Enter the Attacment : Chosen"))
             break
             
 def sender_button():
     global message, contacts_path, attachment_path, attachment_first
+    (contacts, numbers) = excel.read_file(contacts_path)
+    whatsapp.sender(numbers, contacts, attachment_path, message, 
+                    False)
     print("sender_button")
     
 def messages_sent_progress_bar():
@@ -371,6 +373,7 @@ message = None
 attachment_path = None
 contacts_path = None
 attachment_first = False
+_translate = QtCore.QCoreApplication.translate
 
 if __name__ == "__main__":
     import sys

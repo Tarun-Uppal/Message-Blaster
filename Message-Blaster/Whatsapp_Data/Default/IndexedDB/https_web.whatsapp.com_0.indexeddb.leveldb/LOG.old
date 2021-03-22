@@ -1,3 +1,6 @@
-2021/03/18-14:39:50.691 3bfc Reusing MANIFEST p:\Message-Blaster\Message-Blaster\Whatsapp_Data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/03/18-14:39:50.692 3bfc Recovering log #52
-2021/03/18-14:39:50.779 3bfc Reusing old log p:\Message-Blaster\Message-Blaster\Whatsapp_Data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000052.log 
+2021/03/22-12:49:11.447 16bc Reusing MANIFEST p:\Message-Blaster\Message-Blaster\Whatsapp_Data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/22-12:49:11.447 16bc Recovering log #3
+2021/03/22-12:49:11.878 16bc Reusing old log p:\Message-Blaster\Message-Blaster\Whatsapp_Data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000003.log 
+2021/03/22-12:50:26.954 1d1c Level-0 table #5: started
+2021/03/22-12:50:27.050 1d1c Level-0 table #5: 1128956 bytes OK
+2021/03/22-12:50:27.068 1d1c Delete type=0 #3
