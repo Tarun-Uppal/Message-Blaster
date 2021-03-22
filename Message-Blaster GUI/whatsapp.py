@@ -34,7 +34,7 @@ def sender(numbers, contacts, attachment_path, message1, first_attachment):
     """
     sends the contacts the message
     """
-    message1 = message1.replace('(new_line)', '\n')
+    message1 = message1.replace('(new line)', '\n')
     # the number of numbers to send the message to
     numbers_size = len(numbers)
     # login into whtsapp

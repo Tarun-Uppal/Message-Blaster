@@ -252,18 +252,9 @@ class Ui_MainWindow(object):
         self.vertical_layout_2.addWidget(self.sender_info)
         spacerItem10 = QtWidgets.QSpacerItem(100, 5, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         self.vertical_layout_2.addItem(spacerItem10)
-        self.messages_sent_progress_bar = QtWidgets.QProgressBar(self.centralwidget)
         font = QtGui.QFont()
         font.setFamily("Comic Sans MS")
         font.setPointSize(15)
-        self.messages_sent_progress_bar.setFont(font)
-        self.messages_sent_progress_bar.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.messages_sent_progress_bar.setStyleSheet("")
-        self.messages_sent_progress_bar.setProperty("value", 24)
-        self.messages_sent_progress_bar.setTextVisible(False)
-        self.messages_sent_progress_bar.setTextDirection(QtWidgets.QProgressBar.TopToBottom)
-        self.messages_sent_progress_bar.setObjectName("messages_sent_progress_bar")
-        self.vertical_layout_2.addWidget(self.messages_sent_progress_bar)
         self.horizontalLayout.addLayout(self.vertical_layout_2)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -293,17 +284,17 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.login_button.setText(_translate("MainWindow", "log in to whatsapp"))
+        self.login_button.setText(_translate("MainWindow", "Login to Whatsapp"))
         self.login_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-3epfk\"><span style=\" text-decoration: underline; color:#0000ff;\">Whatsapp Login Instructions</span></a></p></body></html>"))
         self.excel_button.setText(_translate("MainWindow", "Excel File Choser"))
         self.excel_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-fco0p\"><span style=\" text-decoration: underline; color:#0000ff;\">Excel File Formatting Instructions</span></a></p></body></html>"))
         self.message_textbox.setPlaceholderText(_translate("MainWindow", "Please enter your message here"))
-        self.message_submit_button.setText(_translate("MainWindow", "Submit Text"))
+        self.message_submit_button.setText(_translate("MainWindow", "Submit Message"))
         self.message_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-8t5tp\"><span style=\" text-decoration: underline; color:#0000ff;\">Message Instructions and formatting</span></a></p></body></html>"))
         self.attachment_first_checkbox.setText(_translate("MainWindow", "Would you like the attachment to be sent first"))
         self.attachment_button.setText(_translate("MainWindow", "Please Enter the Attacment"))
         self.attachment_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-6fk2k\"><span style=\" text-decoration: underline; color:#0000ff;\">Instructions before you add the attachment</span></a></p></body></html>"))
-        self.sender_button.setText(_translate("MainWindow", "start sending messages"))
+        self.sender_button.setText(_translate("MainWindow", "Start Sending Messages"))
         self.sender_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-8bknl\"><span style=\" text-decoration: underline; color:#0000ff;\">Instructions before you start sending the messsages</span></a></p></body></html>"))
         self.menuExit.setTitle(_translate("MainWindow", "Exit"))
         self.menuReset.setTitle(_translate("MainWindow", "Reset"))
@@ -315,11 +306,13 @@ class Ui_MainWindow(object):
         self.sender_button.clicked.connect(sender_button)
 
 def login_info():
-    # print("login_info")
+    global ui, _translate, login_status
     whatsapp.whatsapp_login()
+    ui.login_button.setText(_translate("MainWindow", "Login to Whatsapp : Completed"))
+    login_status = True
     
 def excel_button():
-    global contacts_path, ui, _translate, contacts, numbers
+    global contacts_path, ui, _translate, contacts_status
     print("excel_button")
     while True:
         filename = QFileDialog.getOpenFileName()
@@ -327,20 +320,12 @@ def excel_button():
         filename = contacts_path.split('.')
         if filename[1] == 'xlsx' or filename[1] == 'xlsb':
             ui.excel_button.setText(_translate("MainWindow", "Excel File Choser : Chosen"))
+            contacts_status = True
             break
 
-def attachment_first_checkbox():
-    global attachment_first
-    print("attachment_first_checkbox")
-    if ui.attachment_first_checkbox.checkState() == 2:
-        attachment_first = True
-    else:
-        attachment_first = False  
-
 def attachment_button():
-    global attachment_path, ui, _translate
+    global attachment_path, ui, _translate, attachment_status
     print("attachment_button")
-    attachment_first_checkbox()
     while True:
         filename = QFileDialog.getOpenFileName()
         attachment_path = filename[0]
@@ -349,31 +334,38 @@ def attachment_button():
         valid_extensions = ['xlsb', 'xlsx', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'jpg', 'gif', 'png', 'mp4', 'avi']
         if extension.lower() in valid_extensions:
             ui.attachment_button.setText(_translate("MainWindow", "Please Enter the Attacment : Chosen"))
+            attachment_status = True
             break
             
 def sender_button():
-    global message, contacts_path, attachment_path, attachment_first
-    (contacts, numbers) = excel.read_file(contacts_path)
-    whatsapp.sender(numbers, contacts, attachment_path, message, 
-                    False)
+    global message, contacts_path, attachment_path, ui, message_status, attachment_status, contacts_status, login_status
+    if ui.attachment_first_checkbox.checkState() == 2:
+        attachment_first = True
+    else:
+        attachment_first = False  
+    if message_status == True and attachment_status == True and contacts_status == True and login_status == True:
+        (contacts, numbers) = excel.read_file(contacts_path)
+        whatsapp.sender(numbers, contacts, attachment_path, message, 
+                        attachment_first)
     print("sender_button")
     
-def messages_sent_progress_bar():
-    print("messages_sent_progress_bar")
-    
 def message_submit():
-    global message
-    global ui, message
+    global ui, message, _translate, message_status
     print("message_submit_button")
     message = ui.message_textbox.text()
+    ui.message_submit_button.setText(_translate("MainWindow", "Submit Message : Completed"))
+    message_status = True
     print(message)
 
 ui = None
 message = None
 attachment_path = None
 contacts_path = None
-attachment_first = False
 _translate = QtCore.QCoreApplication.translate
+login_status = False
+contacts_status = False
+message_status = False
+attachment_status = False
 
 if __name__ == "__main__":
     import sys

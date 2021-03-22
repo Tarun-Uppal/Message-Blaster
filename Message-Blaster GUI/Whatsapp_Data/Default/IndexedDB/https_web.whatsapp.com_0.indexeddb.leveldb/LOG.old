@@ -1,3 +1,12 @@
-2021/03/22-12:33:26.041 1ffc Reusing MANIFEST p:\Message-Blaster\Message-Blaster GUI\Whatsapp_Data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/03/22-12:33:26.041 1ffc Recovering log #3
-2021/03/22-12:33:26.094 1ffc Reusing old log p:\Message-Blaster\Message-Blaster GUI\Whatsapp_Data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000003.log 
+2021/03/22-14:08:44.108 2860 Reusing MANIFEST p:\Message-Blaster\Message-Blaster GUI\Whatsapp_Data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/22-14:08:44.108 2860 Recovering log #7
+2021/03/22-14:08:44.241 2860 Reusing old log p:\Message-Blaster\Message-Blaster GUI\Whatsapp_Data\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000007.log 
+2021/03/22-14:08:59.947 1de0 Level-0 table #12: started
+2021/03/22-14:09:00.060 1de0 Level-0 table #12: 1249565 bytes OK
+2021/03/22-14:09:00.088 1de0 Delete type=0 #7
+2021/03/22-14:09:01.677 24e0 Compacting 1@1 + 1@2 files
+2021/03/22-14:09:01.816 24e0 Generated table #13@1: 26013 keys, 1115964 bytes
+2021/03/22-14:09:01.816 24e0 Compacted 1@1 + 1@2 files => 1115964 bytes
+2021/03/22-14:09:01.850 24e0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/03/22-14:09:01.851 24e0 Delete type=2 #9
+2021/03/22-14:09:01.851 24e0 Delete type=2 #12
