@@ -1,0 +1,5178 @@
+[0324/185711.073:VERBOSE1:webrtc_internals.cc(118)] Could not get the download directory.
+[0324/185711.105:VERBOSE5:event_handler.cc(33)] RenderWidgetHostViewAura::OnEvent(ET_MOUSE_ENTERED time_stamp 285392.796684 location 0.000000,0.000000 root_location 0.000000,0.000000 flags IS_SYNTHESIZED)
+[0324/185711.105:VERBOSE5:event_handler.cc(33)] RenderWidgetHostViewAura::OnEvent(ET_MOUSE_MOVED time_stamp 285392.796684 location 0.000000,0.000000 root_location 0.000000,0.000000 flags IS_SYNTHESIZED)
+[0324/185711.105:VERBOSE1:simple_index_file.cc(583)] Simple Cache Index is being restored from disk.
+[0324/185711.105:VERBOSE1:simple_index_file.cc(583)] Simple Cache Index is being restored from disk.
+[0324/185711.116:ERROR:dxva_video_decode_accelerator_win.cc(1349)] DXVAVDA fatal error: Could not load mf.dll: The specified module could not be found. (0x7E)
+[0324/185711.122:VERBOSE3:compositor.cc(627)] After updating layers:
+property trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": true,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 1,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::Layers:
+layer_id: 2
+  name: 
+  Bounds: 1280x1696
+  ElementId: (0)
+  HitTestable: 0
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 1
+  effect_tree_index: 1
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 3
+  name: 
+  Bounds: 1280x1696
+  ElementId: (3)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 1
+  effect_tree_index: 1
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 1
+  name: 
+  Bounds: 1280x1696
+  ElementId: (1)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 2
+  effect_tree_index: 2
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 6
+  name: 
+  Bounds: 1280x1696
+  ElementId: (6)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 2
+  effect_tree_index: 2
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+
+[0324/185711.202:VERBOSE3:layer_tree_host.cc(415)] After finishing (<unknown client>) commit on impl, the sync tree:
+property_trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": true,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 1,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::LayerImpls:
+{
+   "LayerTreeImpl": [ {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": false,
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": false,
+      "id": "cc::LayerImpl/000024C0002C1600",
+      "layer_id": 2,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "transform_tree_index": 1
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "element_id": {
+         "id_": 3
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C0002992C0",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 3,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 1
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C000299680",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 1,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "draws_content": 1,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 6
+      },
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::SurfaceLayerImpl/000024C00031E500",
+      "layer_id": 6,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+      "transform_tree_index": 1
+   } ]
+}
+
+[0324/185711.304:VERBOSE3:layer_tree_host_impl.cc(3228)] After activating (<unknown client>) sync tree, the active tree:
+property_trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": true,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 1,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::LayerImpls:
+{
+   "LayerTreeImpl": [ {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": false,
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": false,
+      "id": "cc::LayerImpl/000024C0002C1600",
+      "layer_id": 2,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "transform_tree_index": 1
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "element_id": {
+         "id_": 3
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C0002992C0",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 3,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 1
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C000299680",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 1,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "draws_content": 1,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 6
+      },
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::SurfaceLayerImpl/000024C00031E500",
+      "layer_id": 6,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+      "transform_tree_index": 1
+   } ]
+}
+
+[0324/185711.397:VERBOSE3:layer_tree_host_impl.cc(1545)] Prepare to draw (<unknown client>)
+{
+   "has_no_damage": false,
+   "render_passes": [ {
+      "backdrop_filters": [  ],
+      "cache_render_pass": false,
+      "cat": "disabled-by-default-viz.quads",
+      "copy_requests": 0,
+      "damage_rect": [ 0, 0, 1280, 1696 ],
+      "filters": [  ],
+      "generate_mipmap": false,
+      "has_damage_from_contributing_content": true,
+      "has_transparent_background": false,
+      "id": "CompositorRenderPass/0000000000000002",
+      "output_rect": [ 0, 0, 1280, 1696 ],
+      "quad_list": [ {
+         "content_space_rect": [ 0, 0, 1280, 1696 ],
+         "content_space_visible_rect": [ 0, 0, 1280, 1696 ],
+         "material": 7,
+         "needs_blending": true,
+         "rect_as_target_space_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+         "rect_is_clipped": false,
+         "shared_state": {
+            "id_ref": "000024C000121F80"
+         },
+         "should_draw_with_blending": true,
+         "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+         "visible_rect_as_target_space_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+         "visible_rect_is_clipped": false
+      } ],
+      "shared_quad_state_list": [ {
+         "are_contents_opaque": true,
+         "blend_mode": "SrcOver",
+         "cat": "disabled-by-default-viz.quads",
+         "clip_rect": [ 0, 0, 1280, 1696 ],
+         "id": "viz::SharedQuadState/000024C000121F80",
+         "is_clipped": true,
+         "layer_content_rect": [ 0, 0, 1280, 1696 ],
+         "layer_visible_content_rect": [ 0, 0, 1280, 1696 ],
+         "mask_filter_bounds": [ 0, 0, 0, 0 ],
+         "mask_filter_rounded_corners_radii": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+         "opacity": 1,
+         "transform": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ]
+      } ]
+   } ]
+}
+
+[0324/185711.414:VERBOSE3:compositor.cc(627)] After updating layers:
+property trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 1,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::Layers:
+layer_id: 2
+  name: 
+  Bounds: 1280x1696
+  ElementId: (0)
+  HitTestable: 0
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 1
+  effect_tree_index: 1
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 3
+  name: 
+  Bounds: 1280x1696
+  ElementId: (3)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 1
+  effect_tree_index: 1
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 1
+  name: 
+  Bounds: 1280x1696
+  ElementId: (1)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 2
+  effect_tree_index: 2
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 6
+  name: 
+  Bounds: 1280x1696
+  ElementId: (6)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 2
+  effect_tree_index: 2
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+
+[0324/185711.465:VERBOSE3:layer_tree_host.cc(415)] After finishing (<unknown client>) commit on impl, the sync tree:
+property_trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 1,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::LayerImpls:
+{
+   "LayerTreeImpl": [ {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": false,
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": false,
+      "id": "cc::LayerImpl/000024C0002C1600",
+      "layer_id": 2,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "transform_tree_index": 1
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "element_id": {
+         "id_": 3
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C0002992C0",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 3,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 1
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C000299680",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 1,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "draws_content": 1,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 6
+      },
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::SurfaceLayerImpl/000024C00031E500",
+      "layer_id": 6,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(3, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+      "transform_tree_index": 1
+   } ]
+}
+
+[0324/185711.557:VERBOSE3:layer_tree_host_impl.cc(3228)] After activating (<unknown client>) sync tree, the active tree:
+property_trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 1,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::LayerImpls:
+{
+   "LayerTreeImpl": [ {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": false,
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": false,
+      "id": "cc::LayerImpl/000024C0002C1600",
+      "layer_id": 2,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "transform_tree_index": 1
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "element_id": {
+         "id_": 3
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C0002992C0",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 3,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 1
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C000299680",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 1,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "draws_content": 1,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 6
+      },
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::SurfaceLayerImpl/000024C00031E500",
+      "layer_id": 6,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(3, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+      "transform_tree_index": 1
+   } ]
+}
+
+[0324/185711.644:VERBOSE3:layer_tree_host_impl.cc(1545)] Prepare to draw (<unknown client>)
+{
+   "has_no_damage": false,
+   "render_passes": [ {
+      "backdrop_filters": [  ],
+      "cache_render_pass": false,
+      "cat": "disabled-by-default-viz.quads",
+      "copy_requests": 0,
+      "damage_rect": [ 0, 0, 1280, 1696 ],
+      "filters": [  ],
+      "generate_mipmap": false,
+      "has_damage_from_contributing_content": true,
+      "has_transparent_background": false,
+      "id": "CompositorRenderPass/0000000000000002",
+      "output_rect": [ 0, 0, 1280, 1696 ],
+      "quad_list": [ {
+         "content_space_rect": [ 0, 0, 1280, 1696 ],
+         "content_space_visible_rect": [ 0, 0, 1280, 1696 ],
+         "material": 7,
+         "needs_blending": true,
+         "rect_as_target_space_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+         "rect_is_clipped": false,
+         "shared_state": {
+            "id_ref": "000024C0001224C0"
+         },
+         "should_draw_with_blending": true,
+         "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(3, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+         "visible_rect_as_target_space_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+         "visible_rect_is_clipped": false
+      } ],
+      "shared_quad_state_list": [ {
+         "are_contents_opaque": true,
+         "blend_mode": "SrcOver",
+         "cat": "disabled-by-default-viz.quads",
+         "clip_rect": [ 0, 0, 1280, 1696 ],
+         "id": "viz::SharedQuadState/000024C0001224C0",
+         "is_clipped": true,
+         "layer_content_rect": [ 0, 0, 1280, 1696 ],
+         "layer_visible_content_rect": [ 0, 0, 1280, 1696 ],
+         "mask_filter_bounds": [ 0, 0, 0, 0 ],
+         "mask_filter_rounded_corners_radii": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+         "opacity": 1,
+         "transform": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ]
+      } ]
+   } ]
+}
+
+[0324/185711.699:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/send?phone=919819719688&text&source&data&app_absent
+[0324/185712.156:VERBOSE3:compositor.cc(627)] After updating layers:
+property trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 1,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::Layers:
+layer_id: 2
+  name: 
+  Bounds: 1280x1696
+  ElementId: (0)
+  HitTestable: 0
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 1
+  effect_tree_index: 1
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 3
+  name: 
+  Bounds: 1280x1696
+  ElementId: (3)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 1
+  effect_tree_index: 1
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 1
+  name: 
+  Bounds: 1280x1696
+  ElementId: (1)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 2
+  effect_tree_index: 2
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 6
+  name: 
+  Bounds: 1280x1696
+  ElementId: (6)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 2
+  effect_tree_index: 2
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+
+[0324/185712.163:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/bootstrap_qr-fbb6a00121541f35de3f.css
+[0324/185712.205:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/vendor1~bootstrap_qr.69e960b196d7d6aa3d46.js
+[0324/185712.206:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/bootstrap_qr.8c6bd07fd55e4b8fbdb7.js
+[0324/185712.205:VERBOSE3:layer_tree_host.cc(415)] After finishing (<unknown client>) commit on impl, the sync tree:
+property_trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 1,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::LayerImpls:
+{
+   "LayerTreeImpl": [ {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": false,
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": false,
+      "id": "cc::LayerImpl/000024C0002C1600",
+      "layer_id": 2,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "transform_tree_index": 1
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "element_id": {
+         "id_": 3
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C0002992C0",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 3,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 1
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C000299680",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 1,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "draws_content": 1,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 6
+      },
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::SurfaceLayerImpl/000024C00031E500",
+      "layer_id": 6,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(4, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+      "transform_tree_index": 1
+   } ]
+}
+
+[0324/185712.265:VERBOSE3:layer_tree_host_impl.cc(3228)] After activating (<unknown client>) sync tree, the active tree:
+property_trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 1,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::LayerImpls:
+{
+   "LayerTreeImpl": [ {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": false,
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": false,
+      "id": "cc::LayerImpl/000024C0002C1600",
+      "layer_id": 2,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "transform_tree_index": 1
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "element_id": {
+         "id_": 3
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C0002992C0",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 3,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 1
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C000299680",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 1,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "draws_content": 1,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 6
+      },
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::SurfaceLayerImpl/000024C00031E500",
+      "layer_id": 6,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(4, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+      "transform_tree_index": 1
+   } ]
+}
+
+[0324/185712.326:VERBOSE3:layer_tree_host_impl.cc(1545)] Prepare to draw (<unknown client>)
+{
+   "has_no_damage": false,
+   "render_passes": [ {
+      "backdrop_filters": [  ],
+      "cache_render_pass": false,
+      "cat": "disabled-by-default-viz.quads",
+      "copy_requests": 0,
+      "damage_rect": [ 0, 0, 1280, 1696 ],
+      "filters": [  ],
+      "generate_mipmap": false,
+      "has_damage_from_contributing_content": true,
+      "has_transparent_background": false,
+      "id": "CompositorRenderPass/0000000000000002",
+      "output_rect": [ 0, 0, 1280, 1696 ],
+      "quad_list": [ {
+         "content_space_rect": [ 0, 0, 1280, 1696 ],
+         "content_space_visible_rect": [ 0, 0, 1280, 1696 ],
+         "material": 7,
+         "needs_blending": true,
+         "rect_as_target_space_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+         "rect_is_clipped": false,
+         "shared_state": {
+            "id_ref": "000024C000122E60"
+         },
+         "should_draw_with_blending": true,
+         "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(4, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+         "visible_rect_as_target_space_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+         "visible_rect_is_clipped": false
+      } ],
+      "shared_quad_state_list": [ {
+         "are_contents_opaque": true,
+         "blend_mode": "SrcOver",
+         "cat": "disabled-by-default-viz.quads",
+         "clip_rect": [ 0, 0, 1280, 1696 ],
+         "id": "viz::SharedQuadState/000024C000122E60",
+         "is_clipped": true,
+         "layer_content_rect": [ 0, 0, 1280, 1696 ],
+         "layer_visible_content_rect": [ 0, 0, 1280, 1696 ],
+         "mask_filter_bounds": [ 0, 0, 0, 0 ],
+         "mask_filter_rounded_corners_radii": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+         "opacity": 1,
+         "transform": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ]
+      } ]
+   } ]
+}
+
+[0324/185712.402:VERBOSE3:compositor.cc(627)] After updating layers:
+property trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 2,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::Layers:
+layer_id: 2
+  name: 
+  Bounds: 1280x1696
+  ElementId: (0)
+  HitTestable: 0
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 1
+  effect_tree_index: 1
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 3
+  name: 
+  Bounds: 1280x1696
+  ElementId: (3)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 1
+  effect_tree_index: 1
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 1
+  name: 
+  Bounds: 1280x1696
+  ElementId: (1)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 2
+  effect_tree_index: 2
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 6
+  name: 
+  Bounds: 1280x1696
+  ElementId: (6)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 2
+  effect_tree_index: 2
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+
+[0324/185712.441:VERBOSE3:layer_tree_host.cc(415)] After finishing (<unknown client>) commit on impl, the sync tree:
+property_trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 2,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::LayerImpls:
+{
+   "LayerTreeImpl": [ {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": false,
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": false,
+      "id": "cc::LayerImpl/000024C0002C1600",
+      "layer_id": 2,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "transform_tree_index": 1
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "element_id": {
+         "id_": 3
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C0002992C0",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 3,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 1
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C000299680",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 1,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "draws_content": 1,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 6
+      },
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::SurfaceLayerImpl/000024C00031E500",
+      "layer_id": 6,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(4, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+      "transform_tree_index": 1
+   } ]
+}
+
+[0324/185712.521:VERBOSE3:layer_tree_host_impl.cc(3228)] After activating (<unknown client>) sync tree, the active tree:
+property_trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 2,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::LayerImpls:
+{
+   "LayerTreeImpl": [ {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": false,
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": false,
+      "id": "cc::LayerImpl/000024C0002C1600",
+      "layer_id": 2,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "transform_tree_index": 1
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "element_id": {
+         "id_": 3
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C0002992C0",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 3,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 1
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C000299680",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 1,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "draws_content": 1,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 6
+      },
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::SurfaceLayerImpl/000024C00031E500",
+      "layer_id": 6,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(4, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+      "transform_tree_index": 1
+   } ]
+}
+
+[0324/185712.603:VERBOSE3:layer_tree_host_impl.cc(1545)] Prepare to draw (<unknown client>)
+{
+   "has_no_damage": false,
+   "render_passes": [ {
+      "backdrop_filters": [  ],
+      "cache_render_pass": false,
+      "cat": "disabled-by-default-viz.quads",
+      "copy_requests": 0,
+      "damage_rect": [ 0, 0, 1280, 1696 ],
+      "filters": [  ],
+      "generate_mipmap": false,
+      "has_damage_from_contributing_content": true,
+      "has_transparent_background": false,
+      "id": "CompositorRenderPass/0000000000000002",
+      "output_rect": [ 0, 0, 1280, 1696 ],
+      "quad_list": [ {
+         "content_space_rect": [ 0, 0, 1280, 1696 ],
+         "content_space_visible_rect": [ 0, 0, 1280, 1696 ],
+         "material": 7,
+         "needs_blending": true,
+         "rect_as_target_space_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+         "rect_is_clipped": false,
+         "shared_state": {
+            "id_ref": "000024C000122CA0"
+         },
+         "should_draw_with_blending": true,
+         "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(2, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(4, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+         "visible_rect_as_target_space_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+         "visible_rect_is_clipped": false
+      } ],
+      "shared_quad_state_list": [ {
+         "are_contents_opaque": true,
+         "blend_mode": "SrcOver",
+         "cat": "disabled-by-default-viz.quads",
+         "clip_rect": [ 0, 0, 1280, 1696 ],
+         "id": "viz::SharedQuadState/000024C000122CA0",
+         "is_clipped": true,
+         "layer_content_rect": [ 0, 0, 1280, 1696 ],
+         "layer_visible_content_rect": [ 0, 0, 1280, 1696 ],
+         "mask_filter_bounds": [ 0, 0, 0, 0 ],
+         "mask_filter_rounded_corners_radii": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+         "opacity": 1,
+         "transform": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ]
+      } ]
+   } ]
+}
+
+[0324/185712.988:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/vendors~bootstrap_main.c1b7995b54edd057ce1f.js
+[0324/185712.990:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/bootstrap_main.c26f42af00f172999bde.css
+[0324/185712.991:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/bootstrap_main.ef6b5ea9cb55cc0c4253.js
+[0324/185713.389:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: wss://web.whatsapp.com/ws
+[0324/185713.394:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/check-update?version=2.2108.8&platform=web
+[0324/185713.402:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/moment_locales/en-GB.0986af5de6e4cb60c945.js
+[0324/185713.404:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/svg.8dbfe0cb7fb6074780dc.js
+[0324/185713.441:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/index.97db5c0e06ba12622b23.worker.js
+[0324/185713.462:VERBOSE1:simple_index_file.cc(583)] Simple Cache Index is being restored from disk.
+[0324/185713.464:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/serviceworker.js
+[0324/185713.471:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/img/qr-video_07f8d2958696dceefa4f4676aeb4663e.jpg
+[0324/185713.566:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/img/favicon_c5088e888c97ad440a61d247596f88e5.png
+[0324/185713.590:VERBOSE1:simple_index_file.cc(583)] Simple Cache Index is being restored from disk.
+[0324/185713.596:VERBOSE1:simple_index_file.cc(583)] Simple Cache Index is being restored from disk.
+[0324/185713.601:VERBOSE1:simple_index_file.cc(583)] Simple Cache Index is being restored from disk.
+[0324/185713.605:VERBOSE1:simple_index_file.cc(583)] Simple Cache Index is being restored from disk.
+[0324/185713.647:VERBOSE1:network_delegate.cc(32)] NetworkDelegate::NotifyBeforeURLRequest: https://web.whatsapp.com/
+[0324/185714.518:VERBOSE1:gles2_cmd_decoder.cc(3833)] GL_OES_packed_depth_stencil supported.
+[0324/185715.401:VERBOSE3:compositor.cc(627)] After updating layers:
+property trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 2,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::Layers:
+layer_id: 2
+  name: 
+  Bounds: 1280x1696
+  ElementId: (0)
+  HitTestable: 0
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 1
+  effect_tree_index: 1
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 3
+  name: 
+  Bounds: 1280x1696
+  ElementId: (3)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 1
+  effect_tree_index: 1
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 1
+  name: 
+  Bounds: 1280x1696
+  ElementId: (1)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 2
+  effect_tree_index: 2
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+layer_id: 6
+  name: 
+  Bounds: 1280x1696
+  ElementId: (6)
+  HitTestable: 1
+  OffsetToTransformParent: [0.000000 0.000000]
+  clip_tree_index: 2
+  effect_tree_index: 2
+  scroll_tree_index: 1
+  transform_tree_index: 1
+
+
+[0324/185715.459:VERBOSE3:layer_tree_host.cc(415)] After finishing (<unknown client>) commit on impl, the sync tree:
+property_trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 2,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::LayerImpls:
+{
+   "LayerTreeImpl": [ {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": false,
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": false,
+      "id": "cc::LayerImpl/000024C0002C1600",
+      "layer_id": 2,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "transform_tree_index": 1
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "element_id": {
+         "id_": 3
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C0002992C0",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 3,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 1
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C000299680",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 1,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "draws_content": 1,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 6
+      },
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::SurfaceLayerImpl/000024C00031E500",
+      "layer_id": 6,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(4, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(4, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+      "transform_tree_index": 1
+   } ]
+}
+
+[0324/185715.518:VERBOSE3:layer_tree_host_impl.cc(3228)] After activating (<unknown client>) sync tree, the active tree:
+property_trees:
+{
+   "clip_tree": {
+      "nodes": [ {
+         "clip": [ 0, 0, 0, 0 ],
+         "clip_type": 0,
+         "id": 0,
+         "parent_id": -1,
+         "transform_id": -1
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 1,
+         "parent_id": 0,
+         "transform_id": 0
+      }, {
+         "clip": [ 0, 0, 1280, 1696 ],
+         "clip_type": 0,
+         "id": 2,
+         "parent_id": 1,
+         "transform_id": 1
+      } ]
+   },
+   "effect_tree": {
+      "nodes": [ {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 0,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 0,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "none",
+         "stable_id": 0,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 1,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": -1,
+         "render_surface_reason": "root",
+         "stable_id": 2,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      }, {
+         "affected_by_backdrop_filter": false,
+         "backdrop_filter_quality": 1,
+         "backdrop_mask_element_id": 0,
+         "blend_mode": "SrcOver",
+         "cache_render_surface": false,
+         "clip_id": 1,
+         "closest_ancestor_being_captured_id": -1,
+         "closest_ancestor_with_cached_render_surface_id": -1,
+         "closest_ancestor_with_copy_request_id": -1,
+         "double_sided": true,
+         "effect_changed": false,
+         "has_copy_request": false,
+         "has_masking_child": false,
+         "has_potential_backdrop_filter_animation": false,
+         "has_potential_filter_animation": false,
+         "has_potential_opacity_animation": false,
+         "hidden_by_backface_visibility": false,
+         "id": 2,
+         "is_drawn": true,
+         "node_or_ancestor_has_filters": false,
+         "only_draws_visible_content": true,
+         "opacity": 1,
+         "parent_id": 1,
+         "render_surface_reason": "none",
+         "stable_id": 1,
+         "subtree_capture_id": "SubtreeCaptureId(0)",
+         "subtree_has_copy_request": false,
+         "target_id": 1,
+         "transform_id": 0,
+         "trilinear_filtering": false
+      } ]
+   },
+   "scroll_tree": {
+      "nodes": [ {
+         "bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 0,
+         "is_composited": false,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": -1,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 0,
+         "user_scrollable_horizontal": false,
+         "user_scrollable_vertical": false
+      }, {
+         "bounds": {
+            "height": 1696,
+            "width": 1280
+         },
+         "container_bounds": {
+            "height": 0,
+            "width": 0
+         },
+         "element_id": {
+            "id_": 0
+         },
+         "id": 1,
+         "is_composited": true,
+         "offset_to_transform_parent": [ 0, 0 ],
+         "overscroll_behavior_x": 1,
+         "overscroll_behavior_y": 1,
+         "parent_id": 0,
+         "prevent_viewport_scrolling_from_inner": false,
+         "scrollable": false,
+         "scrolls_inner_viewport": false,
+         "scrolls_outer_viewport": false,
+         "should_flatten": false,
+         "transform_id": 1,
+         "user_scrollable_horizontal": true,
+         "user_scrollable_vertical": true
+      } ]
+   },
+   "sequence_number": 2,
+   "transform_tree": {
+      "nodes": [ {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 0,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": -1,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      }, {
+         "element_id": {
+            "id_": 0
+         },
+         "flattens_inherited_transform": true,
+         "id": 1,
+         "local": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ],
+         "origin": [ 0, 0, 0 ],
+         "parent_id": 0,
+         "post_translation": [ 0, 0 ],
+         "scroll_offset": [ 0, 0 ],
+         "snap_amount": [ 0, 0 ],
+         "sorting_context_id": 0,
+         "will_change_transform": false
+      } ]
+   }
+}
+
+cc::LayerImpls:
+{
+   "LayerTreeImpl": [ {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": false,
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": false,
+      "id": "cc::LayerImpl/000024C0002C1600",
+      "layer_id": 2,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "transform_tree_index": 1
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 1,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 1,
+      "element_id": {
+         "id_": 3
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C0002992C0",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 3,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "can_have_tilings_state": {
+         "can_have_tilings": false,
+         "draws_content": false,
+         "max_contents_scale": 1,
+         "min_contents_scale": 1,
+         "raster_source_has_recordings": false,
+         "raster_source_solid_color": false
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "coverage_tiles": [  ],
+      "draws_content": 0,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 1
+      },
+      "geometry_contents_scale": 1,
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::PictureLayerImpl/000024C000299680",
+      "ideal_contents_scale": 0,
+      "ideal_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "invalidation": [  ],
+      "layer_id": 1,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "lcd_text_disallowed_reason": "none",
+      "opacity": 1,
+      "pictures": [  ],
+      "position": [ 0, 0 ],
+      "raster_scales": {
+         "contents_scale": 0,
+         "device_scale": 0,
+         "low_res_contents_scale": 0,
+         "page_scale": 0,
+         "source_scale": 0
+      },
+      "scroll_tree_index": 1,
+      "tile_priority_rect": [ 0, 0, 0, 0 ],
+      "tilings": [  ],
+      "transform_tree_index": 1,
+      "visible_rect": [ 0, 0, 0, 0 ]
+   }, {
+      "base_type": "cc::LayerImpl",
+      "bounds": {
+         "height": 1696,
+         "width": 1280
+      },
+      "cat": "disabled-by-default-cc.debug",
+      "clip_tree_index": 2,
+      "contents_opaque": true,
+      "draws_content": 1,
+      "effect_tree_index": 2,
+      "element_id": {
+         "id_": 6
+      },
+      "gpu_memory_usage": 0,
+      "hit_testable": true,
+      "id": "cc::SurfaceLayerImpl/000024C00031E500",
+      "layer_id": 6,
+      "layer_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+      "opacity": 1,
+      "position": [ 0, 0 ],
+      "scroll_tree_index": 1,
+      "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(4, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(4, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+      "transform_tree_index": 1
+   } ]
+}
+
+[0324/185715.579:VERBOSE3:layer_tree_host_impl.cc(1545)] Prepare to draw (<unknown client>)
+{
+   "has_no_damage": false,
+   "render_passes": [ {
+      "backdrop_filters": [  ],
+      "cache_render_pass": false,
+      "cat": "disabled-by-default-viz.quads",
+      "copy_requests": 0,
+      "damage_rect": [ 0, 0, 1280, 1696 ],
+      "filters": [  ],
+      "generate_mipmap": false,
+      "has_damage_from_contributing_content": true,
+      "has_transparent_background": false,
+      "id": "CompositorRenderPass/0000000000000002",
+      "output_rect": [ 0, 0, 1280, 1696 ],
+      "quad_list": [ {
+         "content_space_rect": [ 0, 0, 1280, 1696 ],
+         "content_space_visible_rect": [ 0, 0, 1280, 1696 ],
+         "material": 7,
+         "needs_blending": true,
+         "rect_as_target_space_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+         "rect_is_clipped": false,
+         "shared_state": {
+            "id_ref": "000024C000126C80"
+         },
+         "should_draw_with_blending": true,
+         "surface_range": "SurfaceRange(start: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(4, 1, BA8E0ABC36CDB4C012C16213546862CC)), end: SurfaceId(FrameSinkId(3, 3), LocalSurfaceId(4, 1, BA8E0ABC36CDB4C012C16213546862CC)))",
+         "visible_rect_as_target_space_quad": [ 0, 0, 1280, 0, 1280, 1696, 0, 1696 ],
+         "visible_rect_is_clipped": false
+      } ],
+      "shared_quad_state_list": [ {
+         "are_contents_opaque": true,
+         "blend_mode": "SrcOver",
+         "cat": "disabled-by-default-viz.quads",
+         "clip_rect": [ 0, 0, 1280, 1696 ],
+         "id": "viz::SharedQuadState/000024C000126C80",
+         "is_clipped": true,
+         "layer_content_rect": [ 0, 0, 1280, 1696 ],
+         "layer_visible_content_rect": [ 0, 0, 1280, 1696 ],
+         "mask_filter_bounds": [ 0, 0, 0, 0 ],
+         "mask_filter_rounded_corners_radii": [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+         "opacity": 1,
+         "transform": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ]
+      } ]
+   } ]
+}
+
