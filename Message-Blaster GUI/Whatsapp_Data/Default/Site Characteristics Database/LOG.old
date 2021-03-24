@@ -1,3 +1,6 @@
-2021/03/22-16:40:53.668 31d4 Reusing MANIFEST p:\Message-Blaster\Message-Blaster GUI\Whatsapp_Data\Default\Site Characteristics Database/MANIFEST-000001
-2021/03/22-16:40:53.669 31d4 Recovering log #6
-2021/03/22-16:40:53.669 31d4 Reusing old log p:\Message-Blaster\Message-Blaster GUI\Whatsapp_Data\Default\Site Characteristics Database/000006.log 
+2021/03/24-18:18:40.209 3ffc Log #6: 4 ops saved to Table #7 OK
+2021/03/24-18:18:40.210 3ffc Archiving p:\Message-Blaster\Message-Blaster GUI\Whatsapp_Data\Default\Site Characteristics Database/000006.log: OK
+2021/03/24-18:18:40.211 3ffc Table #4: 40 entries OK
+2021/03/24-18:18:40.211 3ffc Table #7: 4 entries OK
+2021/03/24-18:18:40.213 3ffc Archiving p:\Message-Blaster\Message-Blaster GUI\Whatsapp_Data\Default\Site Characteristics Database/MANIFEST-000001: OK
+2021/03/24-18:18:40.242 3ffc **** Repaired leveldb p:\Message-Blaster\Message-Blaster GUI\Whatsapp_Data\Default\Site Characteristics Database; recovered 2 files; 773 bytes. Some data may have been lost. ****

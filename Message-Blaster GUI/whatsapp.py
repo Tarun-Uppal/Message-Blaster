@@ -37,8 +37,6 @@ def sender(numbers, contacts, attachment_path, message1, first_attachment):
     message1 = message1.replace('(new line)', '\n')
     # the number of numbers to send the message to
     numbers_size = len(numbers)
-    # login into whtsapp
-    # open_whatsapp()
     # sets the starting point
     i = 0   
     # makes a loop
@@ -94,26 +92,13 @@ def send_message(message):
             break
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
-        except Exception as e:
-            print("Failed to send message exception: ", e)
-            return
+        # except Exception as e:
+        #     print("Failed to send message exception: ", e)
+        #     return
     # once the message is over it sends it
     input_box.send_keys(Keys.ENTER)
     print("Message sent successfully")
     
-def isValid(s):
-    """
-    validates the number
-    """
-    # casts the number into a string
-    s = str(s)
-    # stores the pattern
-    Pattern = re.compile("(0/91)?[7-9][0-9]{9}")
-    # validates the pattern and returns thue if it is valid otherwise false
-    if (Pattern.match(s)) and len(s) == 12: 
-        return True
-    else:
-        return False
 
 def send_attachment(file_path):
     global wait, browser, selenium, exceptions
@@ -141,6 +126,7 @@ def send_attachment(file_path):
             image_box = browser.find_element_by_xpath(
                 '//*[@id="app"]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div')
             image_box.click()
+            # ActionChains(browser).click(image_box).perform()
             break
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
@@ -154,18 +140,31 @@ def open_whatsapp():
     logs into whatsapp
     """
     global wait, browser
-    chrome_options = Options()
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--window-size=1280x1696')
+    chrome_options.add_argument('--user-data-dir=/tmp/user-data')
+    chrome_options.add_argument('--hide-scrollbars')
+    chrome_options.add_argument('--enable-logging')
+    chrome_options.add_argument('--log-level=0')
+    chrome_options.add_argument('--v=99')
+    chrome_options.add_argument('--single-process')
+    chrome_options.add_argument('--data-path=/tmp/data-path')
+    chrome_options.add_argument('--ignore-certificate-errors')
+    chrome_options.add_argument('--homedir=/tmp')
+    chrome_options.add_argument('--disk-cache-dir=/tmp/cache-dir')
+    chrome_options.add_argument('user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36')
     chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
     browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
     wait = WebDriverWait(browser, 60)
-    browser.maximize_window()
     
 def whatsapp_login():
     """
     logs into whatsapp
     """
     global wait, browser
-    
     chrome_options = Options()
     chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
     browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
@@ -183,6 +182,7 @@ def whatsapp_login():
 def whatsapp_reset():
     global wait, browser
     chrome_options = Options()
+    chrome_options.add_argument("headless")
     chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
     browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
     wait = WebDriverWait(browser, 60)
@@ -205,3 +205,17 @@ def whatsapp_reset():
             time.sleep(1)
             
     browser.quit()
+    
+def isValid(s):
+    """
+    validates the number
+    """
+    # casts the number into a string
+    s = str(s)
+    # stores the pattern
+    Pattern = re.compile("(0/91)?[7-9][0-9]{9}")
+    # validates the pattern and returns thue if it is valid otherwise false
+    if (Pattern.match(s)) and len(s) == 12: 
+        return True
+    else:
+        return False
