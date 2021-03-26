@@ -1,5 +1,20 @@
 import pandas as pd
 import os
+import re
+
+def isValid(s):
+    """
+    validates the number
+    """
+    # casts the number into a string
+    s = str(s)
+    # stores the pattern
+    Pattern = re.compile("(0/91)?[7-9][0-9]{9}")
+    # validates the pattern and returns thue if it is valid otherwise false
+    if (Pattern.match(s)) and len(s) == 12: 
+        return True
+    else:
+        return False
 
 def read_file(contacts_path):
     data = pd.read_excel (contacts_path) 
@@ -20,7 +35,10 @@ def read_file(contacts_path):
         else:
             contacts[i] = str(df.loc[i].Name)
         try:
-            numbers[i] = int(df.loc[i].Number)
+            if isValid(910000000000 + int(df.loc[i].Number)) == True:
+                numbers[i] = int(df.loc[i].Number)
+            else:
+                return None
         except ValueError as e:
             return None
     

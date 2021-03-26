@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1229</width>
-    <height>520</height>
+    <width>1128</width>
+    <height>478</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -35,7 +35,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <layout class="QVBoxLayout" name="vertical_layout_1" stretch="0,0,0,0,0,0,0,0,0,0,0,0,0">
+     <layout class="QVBoxLayout" name="vertical_layout_1" stretch="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
       <property name="sizeConstraint">
        <enum>QLayout::SetMinAndMaxSize</enum>
       </property>
@@ -75,7 +75,7 @@
          <string notr="true">background-color:&quot;#85c78f&quot;</string>
         </property>
         <property name="text">
-         <string>log in to whatsapp</string>
+         <string>Login to Whasapp</string>
         </property>
         <property name="checkable">
          <bool>false</bool>
@@ -184,7 +184,7 @@
          <string notr="true">background-color:&quot;#85c78f&quot;</string>
         </property>
         <property name="text">
-         <string>excel file choser</string>
+         <string>Please Choose a Excel File with the Phone Numbers and Names</string>
         </property>
         <property name="checkable">
          <bool>false</bool>
@@ -262,6 +262,38 @@
          <size>
           <width>100</width>
           <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="message_checkbox">
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:&quot;#85c78f&quot;</string>
+        </property>
+        <property name="text">
+         <string>Would you like to send a message</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>100</width>
+          <height>5</height>
          </size>
         </property>
        </spacer>
@@ -399,6 +431,38 @@
        <number>6</number>
       </property>
       <item>
+       <widget class="QCheckBox" name="attachment_checkbox">
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:&quot;#85c78f&quot;</string>
+        </property>
+        <property name="text">
+         <string>Would you like to send a attachment</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="attachment_first_spacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>100</width>
+          <height>5</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
        <widget class="QCheckBox" name="attachment_first_checkbox">
         <property name="font">
          <font>
@@ -424,7 +488,7 @@
         </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>10</width>
+          <width>100</width>
           <height>5</height>
          </size>
         </property>
@@ -454,7 +518,7 @@
          <string notr="true">background-color:&quot;#85c78f&quot;</string>
         </property>
         <property name="text">
-         <string>please enter the attacment</string>
+         <string>Please enter the Attacment you would like to send</string>
         </property>
         <property name="checkable">
          <bool>false</bool>
@@ -560,7 +624,7 @@
          <string notr="true">background-color:&quot;#85c78f&quot;</string>
         </property>
         <property name="text">
-         <string>start sending messages</string>
+         <string>Start Sending Messages</string>
         </property>
         <property name="checkable">
          <bool>false</bool>
@@ -642,31 +706,6 @@
         </property>
        </spacer>
       </item>
-      <item>
-       <widget class="QProgressBar" name="messages_sent_progress_bar">
-        <property name="font">
-         <font>
-          <family>Comic Sans MS</family>
-          <pointsize>15</pointsize>
-         </font>
-        </property>
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"/>
-        </property>
-        <property name="value">
-         <number>24</number>
-        </property>
-        <property name="textVisible">
-         <bool>false</bool>
-        </property>
-        <property name="textDirection">
-         <enum>QProgressBar::TopToBottom</enum>
-        </property>
-       </widget>
-      </item>
      </layout>
     </item>
    </layout>
@@ -676,7 +715,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1229</width>
+     <width>1128</width>
      <height>21</height>
     </rect>
    </property>

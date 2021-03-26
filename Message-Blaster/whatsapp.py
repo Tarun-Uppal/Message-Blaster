@@ -30,7 +30,7 @@ Link = "https://web.whatsapp.com/"
 browser = None
 
 # send messages and attachments
-def sender(numbers, contacts, attachment_path, message1, first_attachment):
+def sender(numbers, contacts, attachment_choice, attachment_path, message_choice, message1, first_attachment):
     """
     sends the contacts the message
     """
@@ -48,6 +48,7 @@ def sender(numbers, contacts, attachment_path, message1, first_attachment):
             print(number)
         # otherwise
         else:
+            # opens whatsapp
             open_whatsapp()
             # generates the personalized message
             message = message1.replace('(name)', contacts[i])
@@ -55,16 +56,22 @@ def sender(numbers, contacts, attachment_path, message1, first_attachment):
             link = "https://web.whatsapp.com/send?phone={}&text&source&data&app_absent".format(910000000000+number)
             # sends the generated link to the browser
             browser.get(link)
-            if first_attachment == True:
-                # sends the attachment
+            if attachment_choice == True and message_choice == True:
+                if first_attachment == True:
+                    # sends the attachment
+                    send_attachment(attachment_path)
+                    # sends the message
+                    send_message(message)
+                else:
+                    # sends the message
+                    send_message(message)
+                    # sends the attachment
+                    send_attachment(attachment_path)
+            elif attachment_choice == True:
                 send_attachment(attachment_path)
-                # sends the message
+            elif message_choice == True:
                 send_message(message)
-            else:
-                # sends the message
-                send_message(message)
-                # sends the attachment
-                send_attachment(attachment_path)
+                
             # waits for 1 second
             time.sleep(1)
             # exits the browser
@@ -92,12 +99,9 @@ def send_message(message):
             break
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
-        # except Exception as e:
-        #     print("Failed to send message exception: ", e)
-        #     return
     # once the message is over it sends it
     input_box.send_keys(Keys.ENTER)
-    print("Message sent successfully")
+    return True
     
 
 def send_attachment(file_path):
@@ -120,26 +124,25 @@ def send_attachment(file_path):
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
             
-    # action = ActionChains(browser) 
     while True:
         try:
             image_box = browser.find_element_by_xpath(
                 '//*[@id="app"]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div')
             image_box.click()
-            # ActionChains(browser).click(image_box).perform()
             break
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
         except selenium.common.exceptions.ElementNotInteractableException as e:
             continue
     time.sleep(1)
-    print("File sent")
+    return True
     
 def open_whatsapp():
     """
-    logs into whatsapp
+    opens whatsapp web in headless mode
     """
     global wait, browser
+    
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--disable-logging')
@@ -158,14 +161,17 @@ def open_whatsapp():
     chrome_options.add_argument('--disk-cache-dir=/tmp/cache-dir')
     chrome_options.add_argument('user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36')
     chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
+    
     browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
     wait = WebDriverWait(browser, 60)
-    
+    return True
+
 def whatsapp_login():
     """
     logs into whatsapp
     """
-    global wait, browser
+    global wait, browser, selenium
+    
     chrome_options = Options()
     chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
     browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
@@ -176,11 +182,17 @@ def whatsapp_login():
         try:
             stuff = browser.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[2]/span')
             browser.quit()
+            return True
             break
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
+        except selenium.common.exceptions.WebDriverException as e:
+            return False
             
 def whatsapp_reset():
+    """
+    resets whatsapp
+    """
     global wait, browser
     chrome_options = Options()
     chrome_options.add_argument("headless")
@@ -196,7 +208,6 @@ def whatsapp_reset():
             break
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
-        
     while True:
         try:
             options = browser.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[3]/span/div/ul/li[7]')
