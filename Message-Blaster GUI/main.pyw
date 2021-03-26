@@ -4,6 +4,11 @@ import whatsapp
 import excel_reader as excel
 import sys
 
+import win32gui, win32con
+
+the_program_to_hide = win32gui.GetForegroundWindow()
+win32gui.ShowWindow(the_program_to_hide , win32con.SW_HIDE)
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -291,9 +296,13 @@ def excel_button():
         contacts_path = filename[0]
         filename = contacts_path.split('.')
         if filename[1] == 'xlsx' or filename[1] == 'xlsb':
-            ui.excel_button.setText(_translate("MainWindow", "Excel File Choser : Chosen"))
-            contacts_status = True
-            break
+            val = excel.read_file(contacts_path)
+            if val == None:
+                continue
+            else:
+                ui.excel_button.setText(_translate("MainWindow", "Excel File Choser : Chosen"))
+                contacts_status = True
+                break
 
 def attachment_button():
     global attachment_path, ui, _translate, attachment_status
