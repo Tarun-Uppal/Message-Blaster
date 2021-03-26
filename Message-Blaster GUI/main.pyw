@@ -372,6 +372,7 @@ def sender_button():
             ui.sender_button.setText(_translate("MainWindow", "Sending Messages : Please Wait"))
             (contacts, numbers) = excel.read_file(contacts_path)
             whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, message, attachment_first)
+            ui.sender_button.setText(_translate("MainWindow", "Start Sending Messages"))
     
 def message_submit():
     global ui, message, _translate, message_status, message_choice
