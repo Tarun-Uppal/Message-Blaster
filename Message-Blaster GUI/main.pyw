@@ -356,7 +356,7 @@ def attachment_button():
                     ui.attachment_button.setText(_translate("MainWindow", "Attacment : Chosen"))
                     attachment_status = True
                     break
-            except IndexError as e:
+            except IndexError:
                 break
             
 def sender_button():
@@ -379,6 +379,7 @@ def sender_button():
         
     if message_choice == True or attachment_choice == True:
         if message_status == True and attachment_status == True and contacts_status == True and login_status == True:
+            ui.sender_button.setText(_translate("MainWindow", "Sending Messages : Please Wait"))
             (contacts, numbers) = excel.read_file(contacts_path)
             whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, message, attachment_first)
     
