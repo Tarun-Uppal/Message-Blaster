@@ -338,7 +338,12 @@ def excel_button():
 
 def attachment_button():
     global attachment_path, ui, _translate, attachment_status, attachment_choice
-    attachment_choice = True
+    
+    if ui.attachment_checkbox.checkState() == 2:
+        attachment_choice = True
+    else:
+        attachment_choice = False  
+        
     if attachment_choice == True:
         while True:
             filename = QFileDialog.getOpenFileName()
@@ -362,13 +367,28 @@ def sender_button():
     else:
         attachment_first = False  
         
-    if message_status == True and attachment_status == True and contacts_status == True and login_status == True:
-        (contacts, numbers) = excel.read_file(contacts_path)
-        whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, message, attachment_first)
+    if ui.message_checkbox.checkState() == 2:
+        message_choice = True
+    else:
+        message_choice = False  
+        
+    if ui.attachment_checkbox.checkState() == 2:
+        attachment_choice = True
+    else:
+        attachment_choice = False  
+        
+    if message_choice == True or attachment_choice == True:
+        if message_status == True and attachment_status == True and contacts_status == True and login_status == True:
+            (contacts, numbers) = excel.read_file(contacts_path)
+            whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, message, attachment_first)
     
 def message_submit():
     global ui, message, _translate, message_status, message_choice
-    message_choice = True
+    if ui.message_checkbox.checkState() == 2:
+        message_choice = True
+    else:
+        message_choice = False  
+        
     if message_choice == True:
         message = ui.message_textbox.text()
         if message != '':
@@ -384,8 +404,8 @@ login_status = False
 contacts_status = False
 message_status = False
 attachment_status = False
-message_choice = False
-attachment_choice = False
+message_choice = None
+attachment_choice = None
 
 if __name__ == "__main__":
     import sys
