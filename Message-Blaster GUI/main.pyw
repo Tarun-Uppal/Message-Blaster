@@ -323,7 +323,7 @@ def excel_button():
                     ui.excel_button.setText(_translate("MainWindow", "Excel File : Chosen"))
                     contacts_status = True
                     break
-        except IndexError as e:
+        except IndexError:
             break
 
 def attachment_button():
