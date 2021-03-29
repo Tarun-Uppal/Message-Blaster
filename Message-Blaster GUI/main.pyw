@@ -352,25 +352,8 @@ def attachment_button():
                 break
             
 def sender_button():
-    global message, contacts_path, attachment_path, ui, message_status, attachment_status, contacts_status, login_status, attachment_choice, message_choice
-    
-    
-        
-    if message_choice == True or attachment_choice == True:
-        if message_status == True and attachment_status == True and contacts_status == True and login_status == True:
-            ui.sender_button.setText(_translate("MainWindow", "Sending Messages : Please Wait"))
-            # (contacts, numbers) = excel.read_file(contacts_path)
-            # whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, 
-            #                 message, attachment_first)
-            thread = threading.Thread(target=send_message)
-            thread.start()
-            ui.sender_button.setText(_translate("MainWindow", "Start Sending Messages"))
-
-def send_message():
-    global message, contacts_path, attachment_path, ui, message_status, attachment_status, contacts_status, login_status, attachment_choice, message_choice
-    attachment_first = None
-    message_choice = None
-    attachment_choice = None
+    global message, contacts_path, attachment_path, ui, message_status, attachment_status, contacts_status, login_status
+    global attachment_choice, message_choice, attachment_first, message_choice, attachment_choice
     
     if ui.attachment_first_checkbox.checkState() == 2:
         attachment_first = True
@@ -381,15 +364,31 @@ def send_message():
         message_choice = True
     else:
         message_choice = False  
+        message_status = False
         
     if ui.attachment_checkbox.checkState() == 2:
         attachment_choice = True
     else:
-        attachment_choice = False  
-        
+        attachment_choice = False
+        attachment_status = False
+    
+    if contacts_status == True and login_status == True:
+        if (message_choice == True and message_status == True) or (attachment_choice == True and attachment_status == True):
+            ui.sender_button.setText(_translate("MainWindow", "Sending Messages : Please Wait"))
+            thread = threading.Thread(target=send_message)
+            thread.start()
+            ui.sender_button.setText(_translate("MainWindow", "Start Sending Messages"))
+	    
+
+def send_message():
+    global message, contacts_path, attachment_path, ui, message_status, attachment_status, contacts_status, login_status
+    global attachment_choice, message_choice, attachment_first, message_choice, attachment_choice
+    ui.sender_button.setText(_translate("MainWindow", "Sending Messages : Please Wait"))
     (contacts, numbers) = excel.read_file(contacts_path)
     whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, 
                             message, attachment_first)
+    ui.sender_button.setText(_translate("MainWindow", "Start Sending Messages"))
+    
     
 def message_submit():
     global ui, message, _translate, message_status, message_choice
@@ -413,6 +412,9 @@ login_status = False
 contacts_status = False
 message_status = False
 attachment_status = False
+message_choice = None
+attachment_choice = None
+attachment_first = None
 message_choice = None
 attachment_choice = None
 
