@@ -1,9 +1,11 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog
+
 import whatsapp
 import excel_reader as excel
 import sys
-
+import threading
+            
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -352,6 +354,24 @@ def attachment_button():
 def sender_button():
     global message, contacts_path, attachment_path, ui, message_status, attachment_status, contacts_status, login_status, attachment_choice, message_choice
     
+    
+        
+    if message_choice == True or attachment_choice == True:
+        if message_status == True and attachment_status == True and contacts_status == True and login_status == True:
+            ui.sender_button.setText(_translate("MainWindow", "Sending Messages : Please Wait"))
+            # (contacts, numbers) = excel.read_file(contacts_path)
+            # whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, 
+            #                 message, attachment_first)
+            thread = threading.Thread(target=send_message)
+            thread.start()
+            ui.sender_button.setText(_translate("MainWindow", "Start Sending Messages"))
+
+def send_message():
+    global message, contacts_path, attachment_path, ui, message_status, attachment_status, contacts_status, login_status, attachment_choice, message_choice
+    attachment_first = None
+    message_choice = None
+    attachment_choice = None
+    
     if ui.attachment_first_checkbox.checkState() == 2:
         attachment_first = True
     else:
@@ -367,12 +387,9 @@ def sender_button():
     else:
         attachment_choice = False  
         
-    if message_choice == True or attachment_choice == True:
-        if message_status == True and attachment_status == True and contacts_status == True and login_status == True:
-            ui.sender_button.setText(_translate("MainWindow", "Sending Messages : Please Wait"))
-            (contacts, numbers) = excel.read_file(contacts_path)
-            whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, message, attachment_first)
-            ui.sender_button.setText(_translate("MainWindow", "Start Sending Messages"))
+    (contacts, numbers) = excel.read_file(contacts_path)
+    whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, 
+                            message, attachment_first)
     
 def message_submit():
     global ui, message, _translate, message_status, message_choice

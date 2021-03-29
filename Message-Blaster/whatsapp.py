@@ -34,7 +34,8 @@ def sender(numbers, contacts, attachment_choice, attachment_path, message_choice
     """
     sends the contacts the message
     """
-    message1 = message1.replace('(new line)', '\n')
+    if str(message1).find('(new line)') != -1:
+        message1 = message1.replace('(new line)', '\n')
     # the number of numbers to send the message to
     numbers_size = len(numbers)
     # sets the starting point
@@ -51,7 +52,10 @@ def sender(numbers, contacts, attachment_choice, attachment_path, message_choice
             # opens whatsapp
             open_whatsapp()
             # generates the personalized message
-            message = message1.replace('(name)', contacts[i])
+            if str(message1).find('(name)') != -1:
+                message = message1.replace('(name)', contacts[i])
+            else:
+                message = message1 
             # generates the link
             link = "https://web.whatsapp.com/send?phone={}&text&source&data&app_absent".format(910000000000+number)
             # sends the generated link to the browser
@@ -171,23 +175,30 @@ def whatsapp_login():
     logs into whatsapp
     """
     global wait, browser, selenium
-    
-    chrome_options = Options()
-    chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
-    browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
-    wait = WebDriverWait(browser, 60)
-    browser.get(Link)
-    browser.maximize_window()
-    while True:
+    try:
+        chrome_options = Options()
+        chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
         try:
-            stuff = browser.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[2]/span')
-            browser.quit()
-            return True
-            break
-        except exceptions.NoSuchElementException as e:
-            time.sleep(1)
-        except selenium.common.exceptions.WebDriverException as e:
+            browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
+        except selenium.common.exceptions.SessionNotCreatedException as e:
             return False
+        
+        wait = WebDriverWait(browser, 60)
+        browser.get(Link)
+        browser.maximize_window()
+        
+        while True:
+            try:
+                stuff = browser.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[2]/span')
+                browser.quit()
+                return True
+                break
+            except exceptions.NoSuchElementException as e:
+                time.sleep(1)
+            except selenium.common.exceptions.WebDriverException as e:
+                return False
+    except Exception as e:
+        return False
             
 def whatsapp_reset():
     """

@@ -34,7 +34,8 @@ def sender(numbers, contacts, attachment_choice, attachment_path, message_choice
     """
     sends the contacts the message
     """
-    message1 = message1.replace('(new line)', '\n')
+    if str(message1).find('(new line)') != -1:
+        message1 = message1.replace('(new line)', '\n')
     # the number of numbers to send the message to
     numbers_size = len(numbers)
     # sets the starting point
@@ -51,7 +52,10 @@ def sender(numbers, contacts, attachment_choice, attachment_path, message_choice
             # opens whatsapp
             open_whatsapp()
             # generates the personalized message
-            message = message1.replace('(name)', contacts[i])
+            if str(message1).find('(name)') != -1:
+                message = message1.replace('(name)', contacts[i])
+            else:
+                message = message1 
             # generates the link
             link = "https://web.whatsapp.com/send?phone={}&text&source&data&app_absent".format(910000000000+number)
             # sends the generated link to the browser
