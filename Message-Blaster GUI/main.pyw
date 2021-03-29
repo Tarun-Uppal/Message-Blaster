@@ -364,13 +364,13 @@ def sender_button():
         message_choice = True
     else:
         message_choice = False  
-        message_status = False
+        # message_status = False
         
     if ui.attachment_checkbox.checkState() == 2:
         attachment_choice = True
     else:
         attachment_choice = False
-        attachment_status = False
+        # attachment_status = False
     
     if contacts_status == True and login_status == True:
         if (message_choice == True and message_status == True) or (attachment_choice == True and attachment_status == True):

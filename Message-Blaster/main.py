@@ -5,7 +5,7 @@ import os
 def main():
     while True:
         # whatsapp.whatsapp_reset()
-        # var1 = whatsapp.whatsapp_login()
+        var1 = whatsapp.whatsapp_login()
         var1 = True
         var = excel.read_file(os.path.dirname(__file__) + r'\Contacts.xlsx')
         if var == None or var1 == False:
