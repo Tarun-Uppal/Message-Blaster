@@ -401,8 +401,24 @@ def send_message():
     whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, 
                             message, attachment_first)
     whatsapp.whatsapp_reset()
-    ui.retranslateUi(MainWindow)
-    reset_varibles()
+    ui.login_button.setText(_translate("MainWindow", "Login to Whasapp"))
+    ui.login_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-3epfk\"><span style=\" text-decoration: underline; color:#0000ff;\">Whatsapp Login Instructions</span></a></p></body></html>"))
+    ui.excel_button.setText(_translate("MainWindow", "Please Choose a Excel File with the Phone Numbers and Names"))
+    ui.excel_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-fco0p\"><span style=\" text-decoration: underline; color:#0000ff;\">Excel File Formatting Instructions</span></a></p></body></html>"))
+    ui.message_checkbox.setText(_translate("MainWindow", "Would you like to send a message"))
+    ui.message_textbox.setPlaceholderText(_translate("MainWindow", "Please enter your message here"))
+    ui.message_submit_button.setText(_translate("MainWindow", "Submit Text"))
+    ui.message_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-8t5tp\"><span style=\" text-decoration: underline; color:#0000ff;\">Message Instructions and formatting</span></a></p></body></html>"))
+    ui.attachment_checkbox.setText(_translate("MainWindow", "Would you like to send a attachment"))
+    ui.attachment_first_checkbox.setText(_translate("MainWindow", "Would you like the attachment to be sent first"))
+    ui.attachment_button.setText(_translate("MainWindow", "Please enter the Attacment you would like to send"))
+    ui.attachment_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-6fk2k\"><span style=\" text-decoration: underline; color:#0000ff;\">Instructions before you add the attachment</span></a></p></body></html>"))
+    ui.sender_button.setText(_translate("MainWindow", "Start Sending Messages"))
+    ui.sender_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-8bknl\"><span style=\" text-decoration: underline; color:#0000ff;\">Instructions before you start sending the messsages</span></a></p></body></html>"))
+    ui.message_checkbox.setChecked(False)
+    ui.attachment_checkbox.setChecked(False)
+    ui.attachment_first_checkbox.setChecked(False)
+    ui.message_textbox.setText('')
     
 def message_submit():
     global ui, message, _translate, message_status, message_choice
