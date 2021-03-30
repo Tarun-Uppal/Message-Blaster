@@ -395,6 +395,7 @@ def send_message():
     (contacts, numbers) = excel.read_file(contacts_path)
     whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, 
                             message, attachment_first)
+    whatsapp.whatsapp_reset()
     ui.retranslateUi(MainWindow)
     reset_varibles()
     
