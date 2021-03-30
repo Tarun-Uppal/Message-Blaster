@@ -353,13 +353,16 @@ def attachment_button():
         while True:
             filename = QFileDialog.getOpenFileName()
             try:
-                attachment_path = filename[0]
-                print(filename[0])
-                extension = attachment_path.split('.')[1]
-                valid_extensions = ['xlsb', 'xlsx', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'jpg', 'gif', 'png', 'mp4', 'avi']
-                if extension.lower() in valid_extensions:
-                    ui.attachment_button.setText(_translate("MainWindow", "Attacment : Chosen"))
-                    attachment_status = True
+                attachment_path1 = filename[0]
+                if attachment_path1 != '':
+                    extension = attachment_path1.split('.')[1]
+                    valid_extensions = ['xlsb', 'xlsx', 'doc', 'docx', 'ppt', 'pptx', 'pdf', 'jpg', 'gif', 'png', 'mp4', 'avi']
+                    if extension.lower() in valid_extensions:
+                        ui.attachment_button.setText(_translate("MainWindow", "Attacment : Chosen"))
+                        attachment_status = True
+                        attachment_path = attachment_path1
+                        break
+                else:
                     break
             except IndexError:
                 break
@@ -390,7 +393,6 @@ def sender_button():
             thread = threading.Thread(target=send_message)
             thread.start()
 	    
-
 def send_message():
     global message, contacts_path, attachment_path, ui, message_status, attachment_status, contacts_status, login_status
     global attachment_choice, message_choice, attachment_first, message_choice, attachment_choice
@@ -398,11 +400,9 @@ def send_message():
     (contacts, numbers) = excel.read_file(contacts_path)
     whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, 
                             message, attachment_first)
-    thread = threading.Thread(target=whatsapp.whatsapp_reset())
-    thread.start()
+    whatsapp.whatsapp_reset()
     ui.retranslateUi(MainWindow)
     reset_varibles()
-    
     
 def message_submit():
     global ui, message, _translate, message_status, message_choice
@@ -423,7 +423,6 @@ def reset_varibles():
     message = None
     attachment_path = None
     contacts_path = None
-    _translate = QtCore.QCoreApplication.translate
     login_status = False
     contacts_status = False
     message_status = False
