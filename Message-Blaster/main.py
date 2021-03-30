@@ -17,5 +17,7 @@ def main():
                             + " prices, visit www.edutess.com/shop/ to buy now", 
                             False)
             break
+        
+    whatsapp.whatsapp_reset()
     
 main()
