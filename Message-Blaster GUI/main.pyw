@@ -309,19 +309,22 @@ class Ui_MainWindow(object):
 
 def login_info():
     global ui, _translate, login_status
+    thread = threading.Thread(target=login_whatsapp)
+    thread.start()
+
+def login_whatsapp():
+    global ui, _translate, login_status
     val = whatsapp.whatsapp_login()
     if val == True and login_status == False:
-        ui.login_button.setText(_translate("MainWindow", "Logged in to Whatasapp"))
+        ui.login_button.setText(_translate("MainWindow", "Logged into Whatasapp"))
         login_status = True
-    
+        
 def excel_button():
     global contacts_path, ui, _translate, contacts_status
     while True:
         filename = QFileDialog.getOpenFileName()
         contacts_path1 = filename[0]
-        # print(contacts_path)
         if contacts_path1 != '':
-            # print(contacts_path)
             filename = contacts_path1.split('.')
             try:
                 if filename[1] == 'xlsx' or filename[1] == 'xlsb':
@@ -395,7 +398,8 @@ def send_message():
     (contacts, numbers) = excel.read_file(contacts_path)
     whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, 
                             message, attachment_first)
-    whatsapp.whatsapp_reset()
+    thread = threading.Thread(target=whatsapp.whatsapp_reset())
+    thread.start()
     ui.retranslateUi(MainWindow)
     reset_varibles()
     
@@ -429,7 +433,6 @@ def reset_varibles():
     attachment_first = None
     message_choice = None
     attachment_choice = None
-
 
 ui = None
 message = None
