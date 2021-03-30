@@ -295,6 +295,10 @@ class Ui_MainWindow(object):
         self.attachment_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-6fk2k\"><span style=\" text-decoration: underline; color:#0000ff;\">Instructions before you add the attachment</span></a></p></body></html>"))
         self.sender_button.setText(_translate("MainWindow", "Start Sending Messages"))
         self.sender_info.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster#viewer-8bknl\"><span style=\" text-decoration: underline; color:#0000ff;\">Instructions before you start sending the messsages</span></a></p></body></html>"))
+        self.message_checkbox.setChecked(False)
+        self.attachment_checkbox.setChecked(False)
+        self.attachment_first_checkbox.setChecked(False)
+        self.message_textbox.setText('')
         
         self.login_button.clicked.connect(login_info)
         self.excel_button.clicked.connect(excel_button)
@@ -306,7 +310,7 @@ class Ui_MainWindow(object):
 def login_info():
     global ui, _translate, login_status
     val = whatsapp.whatsapp_login()
-    if val == True:
+    if val == True and login_status == False:
         ui.login_button.setText(_translate("MainWindow", "Logged in to Whatasapp"))
         login_status = True
     
@@ -314,18 +318,24 @@ def excel_button():
     global contacts_path, ui, _translate, contacts_status
     while True:
         filename = QFileDialog.getOpenFileName()
-        contacts_path = filename[0]
-        filename = contacts_path.split('.')
-        try:
-            if filename[1] == 'xlsx' or filename[1] == 'xlsb':
-                val = excel.read_file(contacts_path)
-                if val == None:
-                    continue
-                else:
-                    ui.excel_button.setText(_translate("MainWindow", "Excel File : Chosen"))
-                    contacts_status = True
-                    break
-        except IndexError:
+        contacts_path1 = filename[0]
+        # print(contacts_path)
+        if contacts_path1 != '':
+            # print(contacts_path)
+            filename = contacts_path1.split('.')
+            try:
+                if filename[1] == 'xlsx' or filename[1] == 'xlsb':
+                    val = excel.read_file(contacts_path1)
+                    if val == None:
+                        continue
+                    else:
+                        ui.excel_button.setText(_translate("MainWindow", "Excel File : Chosen"))
+                        contacts_status = True
+                        contacts_path = contacts_path1
+                        break
+            except IndexError:
+                break
+        else:
             break
 
 def attachment_button():
@@ -364,20 +374,18 @@ def sender_button():
         message_choice = True
     else:
         message_choice = False  
-        # message_status = False
+        message_status = False
         
     if ui.attachment_checkbox.checkState() == 2:
         attachment_choice = True
     else:
         attachment_choice = False
-        # attachment_status = False
+        attachment_status = False
     
     if contacts_status == True and login_status == True:
         if (message_choice == True and message_status == True) or (attachment_choice == True and attachment_status == True):
-            ui.sender_button.setText(_translate("MainWindow", "Sending Messages : Please Wait"))
             thread = threading.Thread(target=send_message)
             thread.start()
-            ui.sender_button.setText(_translate("MainWindow", "Start Sending Messages"))
 	    
 
 def send_message():
@@ -387,7 +395,8 @@ def send_message():
     (contacts, numbers) = excel.read_file(contacts_path)
     whatsapp.sender(numbers, contacts, attachment_choice, attachment_path, message_choice, 
                             message, attachment_first)
-    ui.sender_button.setText(_translate("MainWindow", "Start Sending Messages"))
+    ui.retranslateUi(MainWindow)
+    reset_varibles()
     
     
 def message_submit():
@@ -402,6 +411,24 @@ def message_submit():
         if message != '':
             ui.message_submit_button.setText(_translate("MainWindow", "Message : Submitted"))
             message_status = True
+    
+def reset_varibles():
+    global message, contacts_path, attachment_path, ui, message_status, attachment_status, contacts_status, login_status
+    global attachment_choice, message_choice, attachment_first, message_choice, attachment_choice
+    message = None
+    attachment_path = None
+    contacts_path = None
+    _translate = QtCore.QCoreApplication.translate
+    login_status = False
+    contacts_status = False
+    message_status = False
+    attachment_status = False
+    message_choice = None
+    attachment_choice = None
+    attachment_first = None
+    message_choice = None
+    attachment_choice = None
+
 
 ui = None
 message = None

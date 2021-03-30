@@ -17,7 +17,10 @@ def isValid(s):
         return False
 
 def read_file(contacts_path):
-    data = pd.read_excel (contacts_path) 
+    try:
+        data = pd.read_excel (contacts_path) 
+    except AssertionError:
+        return None
     df = pd.DataFrame(data, columns=['Name', 'Number'])
     entries_count = 0
     while True:
@@ -39,7 +42,8 @@ def read_file(contacts_path):
                 numbers[i] = int(df.loc[i].Number)
             else:
                 return None
-        except ValueError as e:
+        except ValueError:
             return None
+        
     
     return (contacts, numbers)
