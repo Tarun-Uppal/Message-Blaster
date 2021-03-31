@@ -243,6 +243,48 @@ def whatsapp_reset():
             time.sleep(1)
             
     browser.quit()
+
+def get_user_name():
+    global wait, browser
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--disable-logging')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--window-size=1280x1696')
+    chrome_options.add_argument('--user-data-dir=/tmp/user-data')
+    chrome_options.add_argument('--hide-scrollbars')
+    chrome_options.add_argument('--enable-logging')
+    chrome_options.add_argument('--log-level=0')
+    chrome_options.add_argument('--v=99')
+    chrome_options.add_argument('--single-process')
+    chrome_options.add_argument('--data-path=/tmp/data-path')
+    chrome_options.add_argument('--ignore-certificate-errors')
+    chrome_options.add_argument('--homedir=/tmp')
+    chrome_options.add_argument('--disk-cache-dir=/tmp/cache-dir')
+    chrome_options.add_argument('user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36')
+    chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
+    browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
+    wait = WebDriverWait(browser, 60)
+    browser.get(Link)
+    browser.maximize_window()
+    while True:
+        try:
+            options = browser.find_element_by_xpath('//*[@id="side"]/header/div[1]/div/div/span')
+            options.click()
+            break
+        except exceptions.NoSuchElementException as e:
+            time.sleep(1)
+    while True:
+        try:
+            name = browser.find_element_by_xpath('//*[@id="app"]/div[1]/div[1]/div[2]/div[1]/span/div[1]/div/div/div[2]/div[2]/div[1]/div/div[2]').get_attribute("innerHTML")
+
+            break
+        except exceptions.NoSuchElementException as e:
+            time.sleep(1)
+            
+    browser.quit()
+    return name
     
 def isValid(s):
     """
