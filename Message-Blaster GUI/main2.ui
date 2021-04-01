@@ -203,7 +203,7 @@
         </font>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster&quot;&gt;&lt;span style=&quot; color:#0000ff;&quot;&gt;To learn more about how to use &lt;br/&gt;Message-Blaster, click here&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://www.pcenthusiast.tech/post/how-to-use-our-whatsapp-message-blaster&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;instruction manual&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="openExternalLinks">
         <bool>false</bool>
@@ -215,7 +215,7 @@
    <widget class="QGroupBox" name="whatsapp_container">
     <property name="enabled">
      <bool>true</bool>
-    </property>   
+    </property>
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -357,7 +357,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string/>
     </property>
     <widget class="QPushButton" name="import_contacts_button">
      <property name="geometry">
@@ -411,6 +411,141 @@
      </property>
     </widget>
    </widget>
+   <widget class="QGroupBox" name="message_container">
+    <property name="geometry">
+     <rect>
+      <x>249</x>
+      <y>-1</y>
+      <width>701</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>19</y>
+       <width>671</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>669</width>
+        <height>419</height>
+       </rect>
+      </property>
+      <widget class="QTextEdit" name="message_input_textbox">
+       <property name="geometry">
+        <rect>
+         <x>-1</x>
+         <y>-1</y>
+         <width>672</width>
+         <height>422</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nunito</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="attachment_container">
+    <property name="geometry">
+     <rect>
+      <x>249</x>
+      <y>-1</y>
+      <width>701</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="add_attachment_button">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>130</y>
+       <width>500</width>
+       <height>130</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nunito</family>
+       <pointsize>32</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Add your Attachment file</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="attachment_status_label">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>350</y>
+       <width>371</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nunito</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Attachment not added</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="supported_formats_label">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>360</y>
+       <width>111</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nunito</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Supported formats:
+jpg, gif, png
+mp4, avi
+pdf, doc, docx, ppt, pptx, xlsb, xlsx</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>import_contacts_container</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>whatsapp_container</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>message_container</zorder>
+   <zorder>attachment_container</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
