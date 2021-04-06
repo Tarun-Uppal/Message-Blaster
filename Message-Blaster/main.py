@@ -18,6 +18,7 @@ def main():
     #                         False)
     #         break
         print(whatsapp.get_user_name())
+        # whatsapp.whatsapp_reset()
         break
     # whatsapp.whatsapp_reset()
     
