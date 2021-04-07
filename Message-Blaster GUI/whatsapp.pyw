@@ -138,7 +138,7 @@ def send_attachment(file_path):
             time.sleep(1)
         except selenium.common.exceptions.ElementNotInteractableException as e:
             continue
-    time.sleep(1)
+    time.sleep(5)
     return True
     
 def open_whatsapp():
@@ -149,14 +149,11 @@ def open_whatsapp():
     
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--disable-logging')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-gpu')
     chrome_options.add_argument('--window-size=1280x1696')
     chrome_options.add_argument('--user-data-dir=/tmp/user-data')
     chrome_options.add_argument('--hide-scrollbars')
-    chrome_options.add_argument('--enable-logging')
-    chrome_options.add_argument('--log-level=0')
     chrome_options.add_argument('--v=99')
     chrome_options.add_argument('--single-process')
     chrome_options.add_argument('--data-path=/tmp/data-path')
@@ -207,14 +204,11 @@ def whatsapp_reset():
     global wait, browser
     chrome_options = Options()
     chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--disable-logging')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-gpu')
     chrome_options.add_argument('--window-size=1280x1696')
     chrome_options.add_argument('--user-data-dir=/tmp/user-data')
     chrome_options.add_argument('--hide-scrollbars')
-    chrome_options.add_argument('--enable-logging')
-    chrome_options.add_argument('--log-level=0')
     chrome_options.add_argument('--v=99')
     chrome_options.add_argument('--single-process')
     chrome_options.add_argument('--data-path=/tmp/data-path')
@@ -248,14 +242,11 @@ def get_user_name():
     global wait, browser
     chrome_options = Options()
     chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--disable-logging')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-gpu')
     chrome_options.add_argument('--window-size=1280x1696')
     chrome_options.add_argument('--user-data-dir=/tmp/user-data')
     chrome_options.add_argument('--hide-scrollbars')
-    chrome_options.add_argument('--enable-logging')
-    chrome_options.add_argument('--log-level=0')
     chrome_options.add_argument('--v=99')
     chrome_options.add_argument('--single-process')
     chrome_options.add_argument('--data-path=/tmp/data-path')
