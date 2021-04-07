@@ -277,6 +277,50 @@ def get_user_name():
     browser.quit()
     return name
     
+def whatsapp_login_and_get_name():
+    global wait, browser, selenium
+    try:
+        chrome_options = Options()
+        chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
+        try:
+            browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
+        except selenium.common.exceptions.SessionNotCreatedException as e:
+            return False
+        
+        wait = WebDriverWait(browser, 60)
+        browser.get(Link)
+        browser.maximize_window()
+        
+        while True:
+            try:
+                stuff = browser.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[2]/span')
+                break
+            except exceptions.NoSuchElementException as e:
+                time.sleep(1)
+            except selenium.common.exceptions.WebDriverException as e:
+                return False
+    except Exception as e:
+        return False
+    
+    while True:
+        try:
+            options = browser.find_element_by_xpath('//*[@id="side"]/header/div[1]/div/div/span')
+            options.click()
+            break
+        except exceptions.NoSuchElementException as e:
+            time.sleep(1)
+    while True:
+        try:
+            name = browser.find_element_by_xpath('//*[@id="app"]/div[1]/div[1]/div[2]/div[1]/span/div[1]/div/div/div[2]/div[2]/div[1]/div/div[2]').get_attribute("innerHTML")
+
+            break
+        except exceptions.NoSuchElementException as e:
+            time.sleep(1)
+            
+    browser.quit()
+    return name
+
+
 def isValid(s):
     """
     validates the number
