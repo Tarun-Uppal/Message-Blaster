@@ -20,7 +20,7 @@ import re
 import time
 # imports selenium
 import selenium
-
+whatsapp_data_path = None
 
 # chrome path driver
 chrome_path = os.path.dirname(__file__) + r'\chromedriver.exe'
@@ -40,6 +40,9 @@ def sender(numbers, contacts, attachment_choice, attachment_path, message_choice
     numbers_size = len(numbers)
     # sets the starting point
     i = 0   
+    # opens whatsapp
+    prev_name = None
+    open_whatsapp()
     # makes a loop
     while True: 
         # gets the phone number form the database  
@@ -49,17 +52,29 @@ def sender(numbers, contacts, attachment_choice, attachment_path, message_choice
             print(number)
         # otherwise
         else:
-            # opens whatsapp
-            open_whatsapp()
             # generates the personalized message
-            if str(message1).find('(name)') != -1:
-                message = message1.replace('(name)', contacts[i])
+            if str(message1).find('{name}') != -1:
+                message = message1.replace('{name}', contacts[i])
             else:
                 message = message1 
             # generates the link
             link = "https://web.whatsapp.com/send?phone={}&text&source&data&app_absent".format(910000000000+number)
             # sends the generated link to the browser
             browser.get(link)
+            name = None
+            while True:
+                while True:
+                    try:
+                        name_box = browser.find_element_by_xpath('//*[@id="main"]/header/div[2]/div/div')
+                        name = name_box.get_attribute("innerHTML")
+                        break
+                    except exceptions.NoSuchElementException:
+                        time.sleep(1)
+                    except exceptions.UnexpectedAlertPresentException:
+                        continue
+                if prev_name != name:
+                    prev_name = name
+                    break
             if attachment_choice == True and message_choice == True:
                 if first_attachment == True:
                     # sends the attachment
@@ -78,19 +93,18 @@ def sender(numbers, contacts, attachment_choice, attachment_path, message_choice
                 
             # waits for 1 second
             time.sleep(1)
-            # exits the browser
-            browser.quit()
-            
         # checks if the array is over
         if i == numbers_size - 1:
             break
         # increments
         i += 1
+    # exits the browser
+    browser.quit()
         
 def send_message(message):
     while True:
         try:
-            # trys to find the browser box message
+            # tries to find the browser box message
             input_box = browser.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
             # goes through all the letters in the message
             for ch in message:
@@ -145,7 +159,8 @@ def open_whatsapp():
     """
     opens whatsapp web in headless mode
     """
-    global wait, browser
+    global wait, browser, whatsapp_data_path
+    whatsapp_data_path = resource_path('Whatsapp_Data')
     
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--headless')
@@ -161,47 +176,18 @@ def open_whatsapp():
     chrome_options.add_argument('--homedir=/tmp')
     chrome_options.add_argument('--disk-cache-dir=/tmp/cache-dir')
     chrome_options.add_argument('user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36')
-    chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
+    chrome_options.add_argument('--user-data-dir=' + whatsapp_data_path)
     
     browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
     wait = WebDriverWait(browser, 60)
     return True
-
-def whatsapp_login():
-    """
-    logs into whatsapp
-    """
-    global wait, browser, selenium
-    try:
-        chrome_options = Options()
-        chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
-        try:
-            browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
-        except selenium.common.exceptions.SessionNotCreatedException as e:
-            return False
-        
-        wait = WebDriverWait(browser, 60)
-        browser.get(Link)
-        browser.maximize_window()
-        
-        while True:
-            try:
-                stuff = browser.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[2]/span')
-                browser.quit()
-                return True
-                break
-            except exceptions.NoSuchElementException as e:
-                time.sleep(1)
-            except selenium.common.exceptions.WebDriverException as e:
-                return False
-    except Exception as e:
-        return False
             
 def whatsapp_reset():
     """
     resets whatsapp
     """
     global wait, browser
+    whatsapp_data_path = resource_path('Whatsapp_Data')
     chrome_options = Options()
     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--no-sandbox')
@@ -216,7 +202,7 @@ def whatsapp_reset():
     chrome_options.add_argument('--homedir=/tmp')
     chrome_options.add_argument('--disk-cache-dir=/tmp/cache-dir')
     chrome_options.add_argument('user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36')
-    chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
+    chrome_options.add_argument('--user-data-dir=' + whatsapp_data_path)
     browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
     wait = WebDriverWait(browser, 60)
     browser.get(Link)
@@ -237,51 +223,15 @@ def whatsapp_reset():
             time.sleep(1)
             
     browser.quit()
-
-def get_user_name():
-    global wait, browser
-    chrome_options = Options()
-    chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--disable-gpu')
-    chrome_options.add_argument('--window-size=1280x1696')
-    chrome_options.add_argument('--user-data-dir=/tmp/user-data')
-    chrome_options.add_argument('--hide-scrollbars')
-    chrome_options.add_argument('--v=99')
-    chrome_options.add_argument('--single-process')
-    chrome_options.add_argument('--data-path=/tmp/data-path')
-    chrome_options.add_argument('--ignore-certificate-errors')
-    chrome_options.add_argument('--homedir=/tmp')
-    chrome_options.add_argument('--disk-cache-dir=/tmp/cache-dir')
-    chrome_options.add_argument('user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36')
-    chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
-    browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
-    wait = WebDriverWait(browser, 60)
-    browser.get(Link)
-    browser.maximize_window()
-    while True:
-        try:
-            options = browser.find_element_by_xpath('//*[@id="side"]/header/div[1]/div/div/span')
-            options.click()
-            break
-        except exceptions.NoSuchElementException as e:
-            time.sleep(1)
-    while True:
-        try:
-            name = browser.find_element_by_xpath('//*[@id="app"]/div[1]/div[1]/div[2]/div[1]/span/div[1]/div/div/div[2]/div[2]/div[1]/div/div[2]').get_attribute("innerHTML")
-
-            break
-        except exceptions.NoSuchElementException as e:
-            time.sleep(1)
-            
-    browser.quit()
-    return name
+    import sys
+    sys.exit()
     
 def whatsapp_login_and_get_name():
     global wait, browser, selenium
+    whatsapp_data_path = resource_path('Whatsapp_Data')
     try:
         chrome_options = Options()
-        chrome_options.add_argument('--user-data-dir=' + os.path.dirname(__file__) + r'\Whatsapp_Data')
+        chrome_options.add_argument('--user-data-dir=' + whatsapp_data_path)
         try:
             browser = webdriver.Chrome(executable_path=chrome_path, options=chrome_options)
         except selenium.common.exceptions.SessionNotCreatedException as e:
@@ -304,7 +254,14 @@ def whatsapp_login_and_get_name():
     
     while True:
         try:
-            options = browser.find_element_by_xpath('//*[@id="side"]/header/div[1]/div/div/span')
+            options = browser.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[3]')
+            options.click()
+            break
+        except exceptions.NoSuchElementException as e:
+            time.sleep(1)
+    while True:
+        try:
+            options = browser.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[3]/span/div[1]/ul/li[3]/div[1]')
             options.click()
             break
         except exceptions.NoSuchElementException as e:
@@ -312,7 +269,6 @@ def whatsapp_login_and_get_name():
     while True:
         try:
             name = browser.find_element_by_xpath('//*[@id="app"]/div[1]/div[1]/div[2]/div[1]/span/div[1]/div/div/div[2]/div[2]/div[1]/div/div[2]').get_attribute("innerHTML")
-
             break
         except exceptions.NoSuchElementException as e:
             time.sleep(1)
@@ -334,3 +290,13 @@ def isValid(s):
         return True
     else:
         return False
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)

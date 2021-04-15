@@ -1,0 +1,4 @@
+Whatsapp_Data/
+__pycache__/
+views/__pycache__/
+*.ui
