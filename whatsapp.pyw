@@ -30,12 +30,23 @@ Link = "https://web.whatsapp.com/"
 browser = None
 
 # send messages and attachments
-def sender(numbers, contacts, attachment_choice, attachment_path, message_choice, message1, first_attachment):
+def sender(numbers, contacts, attachment_path, message1, first_attachment):
     """
     sends the contacts the message
     """
+    if attachment_path == None:
+        attachment_choice = False
+    else:
+        attachment_choice = True
+
+    if message1 == None or message1 == '':
+        message_choice = False
+    else:
+        message_choice = True
+        
     if str(message1).find('(new line)') != -1:
         message1 = message1.replace('(new line)', '\n')
+        
     # the number of numbers to send the message to
     numbers_size = len(numbers)
     # sets the starting point
