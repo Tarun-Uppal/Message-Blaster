@@ -44,16 +44,14 @@ def sender(numbers, contacts, attachment_path, message1, first_attachment):
     else:
         message_choice = True
         
-    if str(message1).find('(new line)') != -1:
-        message1 = message1.replace('(new line)', '\n')
-        
     # the number of numbers to send the message to
     numbers_size = len(numbers)
     # sets the starting point
     i = 0   
     # opens whatsapp
-    prev_name = None
     open_whatsapp()
+    
+    prev_name = None
     # makes a loop
     while True: 
         # gets the phone number form the database  
@@ -63,6 +61,7 @@ def sender(numbers, contacts, attachment_path, message1, first_attachment):
             print(number)
         # otherwise
         else:
+            print("sending message to " + contacts[i])
             # generates the personalized message
             if str(message1).find('{name}') != -1:
                 message = message1.replace('{name}', contacts[i])
@@ -104,9 +103,13 @@ def sender(numbers, contacts, attachment_path, message1, first_attachment):
                 
             # waits for 1 second
             time.sleep(1)
+
         # checks if the array is over
         if i == numbers_size - 1:
             break
+        if (i % 100) == 0:
+            browser.quit()
+            open_whatsapp()
         # increments
         i += 1
     # exits the browser
